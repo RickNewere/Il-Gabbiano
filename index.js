@@ -1,8 +1,18 @@
-// index.js
-document.addEventListener("DOMContentLoaded", () => {
-    // Modifica il contenuto del body o di un elemento specifico
-    document.body.innerHTML = `
-    <h1>Benvenuto nel mio sito!</h1>
-    <p>Questo è il contenuto dinamico generato dal file index.js.</p>
-  `;
+import express from 'express';
+import path from 'path';
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware per servire file statici dalla root
+app.use(express.static(path.join(__dirname)));
+
+// Route di base - serve l'index.html dalla root
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Avvio del server
+app.listen(PORT, () => {
+    console.log(`Server in esecuzione su http://localhost:${PORT}`);
 });
