@@ -1,6 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app/index.jsx'; // Il componente principale di React
-
-// Monta l'app sul DOM
-ReactDOM.render(<App />, document.getElementById('root'));
+// index.js
+document.addEventListener("DOMContentLoaded", () => {
+    // Modifica il contenuto del body o di un elemento specifico
+    document.body.innerHTML = `
+    <h1>Benvenuto nel mio sito!</h1>
+    <p>Questo è il contenuto dinamico generato dal file index.js.</p>
+  `;
+});
