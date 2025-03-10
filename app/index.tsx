@@ -30,7 +30,7 @@ export default function HomeScreen() {
           subtitle={language === 'it'
             ? "Un'oasi di tranquillità nel cuore di Monopoli, a due passi dal mare"
             : "An oasis of tranquility in the heart of Monopoli, just steps from the sea"}
-          imageUrl="https://i.postimg.cc/90hq7Xs3/logo.png"
+          imageUrl="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
           ctaText={language === 'it' ? "Prenota su Airbnb" : "Book on Airbnb"}
           ctaLink={room.airbnbUrl}
           isExternalLink={true}

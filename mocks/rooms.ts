@@ -28,7 +28,7 @@ export const rooms: Room[] = [
     amenities: ['Wi-Fi gratuito', 'Aria condizionata', 'TV a schermo piatto', 'Bagno privato', 'Asciugacapelli', 'Set di cortesia', 'Balconi vista sul centro storico'],
     amenitiesEn: ['Free Wi-Fi', 'Air conditioning', 'Flat-screen TV', 'Private bathroom', 'Hairdryer', 'Courtesy set', 'Balconies overlooking the historic center'],
     images: [
-      'https://i.postimg.cc/J01vdMZZ/vista3.jpg',
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     ],
     airbnbUrl: 'https://it.airbnb.com/rooms/1317966183520064227?_set_bev_on_new_domain=1741519015_EAZWJlZmQwNDIxNj&source_impression_id=p3_1741519015_P3yshf261ft95-iU'
   }
