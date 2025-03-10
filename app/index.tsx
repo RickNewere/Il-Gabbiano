@@ -30,7 +30,7 @@ export default function HomeScreen() {
           subtitle={language === 'it'
             ? "Un'oasi di tranquillità nel cuore di Monopoli, a due passi dal mare"
             : "An oasis of tranquility in the heart of Monopoli, just steps from the sea"}
-          imageUrl="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          imageUrl="https://i.postimg.cc/90hq7Xs3/logo.png"
           ctaText={language === 'it' ? "Prenota su Airbnb" : "Book on Airbnb"}
           ctaLink={room.airbnbUrl}
           isExternalLink={true}
@@ -47,8 +47,8 @@ export default function HomeScreen() {
           <View style={styles.welcomeContainer}>
             <Text style={styles.welcomeText}>
               {language === 'it'
-                ? "Il B&B Il Gabbiano vi accoglie nel cuore del centro storico di Monopoli, a pochi passi dal mare cristallino della costa pugliese. La nostra struttura offre un'atmosfera calda e familiare, ideale per chi desidera scoprire le bellezze di questa incantevole città e della Valle d'Itria."
-                : "B&B Il Gabbiano welcomes you to the heart of Monopoli's historic center, just steps away from the crystal-clear sea of the Apulian coast. Our accommodation offers a warm and familiar atmosphere, ideal for those who wish to discover the beauty of this enchanting city and the Itria Valley."}
+                ? ""
+                : ""}
             </Text>
             <Text style={styles.welcomeText}>
               {language === 'it'

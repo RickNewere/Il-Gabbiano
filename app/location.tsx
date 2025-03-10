@@ -29,19 +29,7 @@ export default function LocationScreen() {
             />
           </View>
 
-          <TouchableOpacity onPress={openMap}>
-            <Image
-                source={{ uri: 'https://maps.googleapis.com/maps/api/staticmap?center=Largo+Amalfitana+20,+70043+Monopoli,+Italy&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7CLargo+Amalfitana+20,+70043+Monopoli,+Italy&key=YOUR_API_KEY' }}
-                style={styles.mapImage}
-                contentFit="cover"
-                fallbackSource={{ uri: 'https://images.unsplash.com/photo-1569336415962-a4bd9f69c07a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' }}
-            />
-            <View style={styles.mapOverlay}>
-              <MapPin size={32} color={Colors.primary} />
-              <Text style={styles.mapText}>{language === 'it' ? "Apri mappa" : "Open map"}</Text>
-            </View>
-          </TouchableOpacity>
-
+          {/* Sezione indirizzo sotto "Dove siamo" */}
           <View style={styles.addressSection}>
             <View style={styles.addressCard}>
               <View style={styles.addressHeader}>
@@ -164,34 +152,9 @@ const styles = StyleSheet.create({
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.m,
   },
-  mapImage: {
-    width: '100%',
-    height: 250,
-  },
-  mapOverlay: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  mapText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: Colors.white,
-    marginTop: 8,
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: { width: 0, height: 1 },
-    textShadowRadius: 3,
-  },
   addressSection: {
     paddingHorizontal: theme.spacing.l,
-    marginTop: -30,
-    marginBottom: theme.spacing.l,
-    zIndex: 10,
+    marginTop: theme.spacing.l, // Aggiunto margine per separare la sezione
   },
   addressCard: {
     backgroundColor: Colors.white,

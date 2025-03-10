@@ -92,6 +92,13 @@ export default function Footer() {
 
           <TouchableOpacity
               style={styles.socialIcon}
+              onPress={() => Linking.openURL('mailto:ilgabbianomonopoli@gmail.com')}
+          >
+            <Mail size={24} color={Colors.white} />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+              style={styles.socialIcon}
               onPress={() => Linking.openURL('https://www.instagram.com/il_gabbiano_/')}
           >
             <Instagram size={24} color={Colors.white} />
