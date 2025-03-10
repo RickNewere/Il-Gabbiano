@@ -55,5 +55,13 @@ export const amenities: Amenity[] = [
     description: 'Informazioni e prenotazioni per escursioni e attività locali',
     descriptionEn: 'Information and bookings for local excursions and activities',
     icon: 'map'
+  },
+  {
+    id: '8',
+    name: 'Noleggio biciclette',
+    nameEn: 'Bicycle rental',
+    description: 'Biciclette disponibili per esplorare la città',
+    descriptionEn: 'Bicycles available to explore the city',
+    icon: 'bike'
   }
 ];

@@ -2,7 +2,7 @@ export interface GalleryImage {
   id: string;
   url: string;
   title: string;
-  category: 'rooms' | 'exterior' | 'amenities' | 'surroundings';
+  category: 'rooms' | 'exterior' | 'surroundings';
 }
 
 export const galleryImages: GalleryImage[] = [
@@ -27,14 +27,8 @@ export const galleryImages: GalleryImage[] = [
   {
     id: '4',
     url: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    title: 'Terrazza panoramica',
-    category: 'amenities'
-  },
-  {
-    id: '5',
-    url: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    title: 'Colazione a buffet',
-    category: 'amenities'
+    title: 'Balconi vista sul centro storico',
+    category: 'exterior'
   },
   {
     id: '6',

@@ -42,61 +42,61 @@ export default function Menu({ visible, onClose }: MenuProps) {
   if (!visible) return null;
 
   return (
-    <View style={styles.overlay}>
-      <Animated.View
-        style={[
-          styles.container,
-          { transform: [{ translateY: slideAnim }] }
-        ]}
-      >
-        <View style={styles.header}>
-          <Text style={styles.title}>{language === 'it' ? 'Menu' : 'Menu'}</Text>
-          <TouchableOpacity onPress={onClose} style={styles.closeButton}>
-            <X size={24} color={Colors.text} />
-          </TouchableOpacity>
-        </View>
+      <View style={styles.overlay}>
+        <Animated.View
+            style={[
+              styles.container,
+              { transform: [{ translateY: slideAnim }] }
+            ]}
+        >
+          <View style={styles.header}>
+            <Text style={styles.title}>{language === 'it' ? 'Menu' : 'Menu'}</Text>
+            <TouchableOpacity onPress={onClose} style={styles.closeButton}>
+              <X size={24} color={Colors.text} />
+            </TouchableOpacity>
+          </View>
 
-        <View style={styles.content}>
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => handleNavigation('/')}
-          >
-            <Text style={styles.menuText}>{language === 'it' ? 'Home' : 'Home'}</Text>
-          </TouchableOpacity>
+          <View style={styles.content}>
+            <TouchableOpacity
+                style={styles.menuItem}
+                onPress={() => handleNavigation('/')}
+            >
+              <Text style={styles.menuText}>{language === 'it' ? 'Home' : 'Home'}</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => handleNavigation('/gallery')}
-          >
-            <Text style={styles.menuText}>{language === 'it' ? 'Galleria' : 'Gallery'}</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.menuItem}
+                onPress={() => handleNavigation('/gallery')}
+            >
+              <Text style={styles.menuText}>{language === 'it' ? 'Galleria' : 'Gallery'}</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => handleNavigation('/location')}
-          >
-            <Text style={styles.menuText}>{language === 'it' ? 'Posizione' : 'Location'}</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.menuItem}
+                onPress={() => handleNavigation('/location')}
+            >
+              <Text style={styles.menuText}>{language === 'it' ? 'Posizione' : 'Location'}</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => handleNavigation('/contact')}
-          >
-            <Text style={styles.menuText}>{language === 'it' ? 'Contatti' : 'Contact'}</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.menuItem}
+                onPress={() => handleNavigation('/contact')}
+            >
+              <Text style={styles.menuText}>{language === 'it' ? 'Contatti' : 'Contact'}</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={styles.languageButton}
-            onPress={toggleLanguage}
-          >
-            <Globe size={20} color={Colors.primary} />
-            <Text style={styles.languageText}>
-              {language === 'it' ? 'English' : 'Italiano'}
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </Animated.View>
-    </View>
+            <TouchableOpacity
+                style={styles.languageButton}
+                onPress={toggleLanguage}
+            >
+              <Globe size={20} color={Colors.primary} />
+              <Text style={styles.languageText}>
+                {language === 'it' ? 'English' : 'Italiano'}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </Animated.View>
+      </View>
   );
 }
 

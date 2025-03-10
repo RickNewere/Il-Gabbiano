@@ -20,13 +20,12 @@ export default function GalleryScreen() {
     { id: null, name: language === 'it' ? 'Tutti' : 'All' },
     { id: 'rooms', name: language === 'it' ? 'Camere' : 'Rooms' },
     { id: 'exterior', name: language === 'it' ? 'Esterni' : 'Exterior' },
-    { id: 'amenities', name: language === 'it' ? 'Servizi' : 'Amenities' },
     { id: 'surroundings', name: language === 'it' ? 'Dintorni' : 'Surroundings' },
   ];
 
   const filteredImages = selectedCategory
-    ? galleryImages.filter(img => img.category === selectedCategory)
-    : galleryImages;
+      ? galleryImages.filter(img => img.category === selectedCategory)
+      : galleryImages;
 
   const handleImagePress = (image: GalleryImage) => {
     setSelectedImage(image);
@@ -53,97 +52,97 @@ export default function GalleryScreen() {
   };
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="dark" />
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={styles.header}>
-          <SectionTitle
-            title={language === 'it' ? "Galleria" : "Gallery"}
-            subtitle={language === 'it'
-              ? "Scopri gli spazi e l'atmosfera del nostro B&B"
-              : "Discover the spaces and atmosphere of our B&B"}
-            centered
+      <View style={styles.container}>
+        <StatusBar style="dark" />
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View style={styles.header}>
+            <SectionTitle
+                title={language === 'it' ? "Galleria" : "Gallery"}
+                subtitle={language === 'it'
+                    ? "Scopri gli spazi e l'atmosfera del nostro B&B"
+                    : "Discover the spaces and atmosphere of our B&B"}
+                centered
+            />
+
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={styles.categoriesContainer}
+            >
+              {categories.map((category) => (
+                  <TouchableOpacity
+                      key={category.id ?? 'all'}
+                      style={[
+                        styles.categoryButton,
+                        selectedCategory === category.id && styles.activeCategoryButton
+                      ]}
+                      onPress={() => setSelectedCategory(category.id)}
+                  >
+                    <Text
+                        style={[
+                          styles.categoryText,
+                          selectedCategory === category.id && styles.activeCategoryText
+                        ]}
+                    >
+                      {category.name}
+                    </Text>
+                  </TouchableOpacity>
+              ))}
+            </ScrollView>
+          </View>
+
+          <GalleryGrid
+              images={filteredImages}
+              onImagePress={handleImagePress}
           />
 
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.categoriesContainer}
-          >
-            {categories.map((category) => (
-              <TouchableOpacity
-                key={category.id ?? 'all'}
-                style={[
-                  styles.categoryButton,
-                  selectedCategory === category.id && styles.activeCategoryButton
-                ]}
-                onPress={() => setSelectedCategory(category.id)}
-              >
-                <Text
-                  style={[
-                    styles.categoryText,
-                    selectedCategory === category.id && styles.activeCategoryText
-                  ]}
-                >
-                  {category.name}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        </View>
+          <Footer />
+        </ScrollView>
 
-        <GalleryGrid
-          images={filteredImages}
-          onImagePress={handleImagePress}
-        />
+        <Modal
+            visible={!!selectedImage}
+            transparent
+            animationType="fade"
+            onRequestClose={closeModal}
+        >
+          <View style={styles.modalContainer}>
+            <TouchableOpacity
+                style={styles.closeButton}
+                onPress={closeModal}
+            >
+              <X size={24} color={Colors.white} />
+            </TouchableOpacity>
 
-        <Footer />
-      </ScrollView>
+            {selectedImage && (
+                <>
+                  <Image
+                      source={{ uri: selectedImage.url }}
+                      style={styles.modalImage}
+                      contentFit="contain"
+                  />
 
-      <Modal
-        visible={!!selectedImage}
-        transparent
-        animationType="fade"
-        onRequestClose={closeModal}
-      >
-        <View style={styles.modalContainer}>
-          <TouchableOpacity
-            style={styles.closeButton}
-            onPress={closeModal}
-          >
-            <X size={24} color={Colors.white} />
-          </TouchableOpacity>
+                  <View style={styles.imageInfo}>
+                    <Text style={styles.imageTitle}>{selectedImage.title}</Text>
+                  </View>
 
-          {selectedImage && (
-            <>
-              <Image
-                source={{ uri: selectedImage.url }}
-                style={styles.modalImage}
-                contentFit="contain"
-              />
+                  <TouchableOpacity
+                      style={[styles.navButton, styles.prevButton]}
+                      onPress={showPrevImage}
+                  >
+                    <ChevronLeft size={24} color={Colors.white} />
+                  </TouchableOpacity>
 
-              <View style={styles.imageInfo}>
-                <Text style={styles.imageTitle}>{selectedImage.title}</Text>
-              </View>
-
-              <TouchableOpacity
-                style={[styles.navButton, styles.prevButton]}
-                onPress={showPrevImage}
-              >
-                <ChevronLeft size={24} color={Colors.white} />
-              </TouchableOpacity>
-
-              <TouchableOpacity
-                style={[styles.navButton, styles.nextButton]}
-                onPress={showNextImage}
-              >
-                <ChevronRight size={24} color={Colors.white} />
-              </TouchableOpacity>
-            </>
-          )}
-        </View>
-      </Modal>
-    </View>
+                  <TouchableOpacity
+                      style={[styles.navButton, styles.nextButton]}
+                      onPress={showNextImage}
+                  >
+                    <ChevronRight size={24} color={Colors.white} />
+                  </TouchableOpacity>
+                </>
+            )}
+          </View>
+        </Modal>
+      </View>
   );
 }
 

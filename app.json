@@ -22,9 +22,20 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router"
+    ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "59d743cd-1d52-475b-8804-92552a789833"
+      }
+    },
+    "owner": "newere00"
   }
 }
