@@ -15,7 +15,7 @@ export default function Footer() {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = '393382837842';
+    const phoneNumber = '393389290144';
     const message = language === 'it'
         ? 'Ciao, vorrei avere maggiori informazioni sul B&B Il Gabbiano.'
         : 'Hello, I would like more information about B&B Il Gabbiano.';
@@ -46,10 +46,10 @@ export default function Footer() {
 
             <TouchableOpacity
                 style={styles.contactItem}
-                onPress={() => Linking.openURL('tel:+393382837842')}
+                onPress={() => Linking.openURL('tel:+393389290144')}
             >
               <Phone size={16} color={Colors.white} />
-              <Text style={styles.contactText}>+39 338 283 7842 / +39 338 929 0144</Text>
+              <Text style={styles.contactText}>+39 338 929 0144</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
