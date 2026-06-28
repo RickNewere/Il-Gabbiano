@@ -1,0 +1,33 @@
+# Dipendenze Node.js
+node_modules/
+
+# Cartelle e configurazioni di Expo / React Native (NON servono per il sito statico)
+app/
+components/
+constants/
+mocks/
+stores/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+app.json
+tsconfig.json
+package.json
+package-lock.json
+bun.lock
+.github/
+
+# Cartelle locali e temporanee di editor/sistemi operativi
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.vercel/
+
+# File di debug e log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env*.local
+*.pem

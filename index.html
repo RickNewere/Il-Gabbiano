@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Il Gabbiano B&B | Incantevole Bilocale nel Centro Storico di Monopoli</title>
+    <meta name="description" content="Soggiorna a pochi passi dal mare nel cuore di Monopoli. Il Gabbiano B&B offre comfort moderno in un'atmosfera antica. Prenota su Airbnb o richiedi un preventivo.">
+    <meta name="keywords" content="B&B Monopoli, affitto vacanze Monopoli, Puglia mare, centro storico Monopoli, alloggio Monopoli, Il Gabbiano B&B">
+    <meta name="author" content="Riccardo Ranieri">
+    
+    <!-- Open Graph (Facebook/WhatsApp) -->
+    <meta property="og:title" content="Il Gabbiano B&B | Monopoli Historic Center">
+    <meta property="og:description" content="Incantevole bilocale a pochi metri dal mare nel centro storico di Monopoli, Puglia.">
+    <meta property="og:image" content="https://i.postimg.cc/hvpwk61w/vista2.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="header-logo">
+                <span class="logo-title">Il Gabbiano</span>
+                <span class="logo-subtitle">B&B</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-i18n="menu-home">Home</a>
+                <a href="#apartment" class="nav-link" data-i18n="menu-apartment">L'Appartamento</a>
+                <a href="#gallery" class="nav-link" data-i18n="menu-gallery">Galleria</a>
+                <a href="#location" class="nav-link" data-i18n="menu-location">Dove Siamo</a>
+                <a href="#contact" class="nav-link" data-i18n="menu-contact">Contatti</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="lang-toggle" id="lang-btn" aria-label="Cambia lingua">
+                    <i data-lucide="globe" class="icon-sm"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+                <a href="https://it.airbnb.ch/rooms/1317966183520064227?adults=2&check_in=2026-08-09&check_out=2026-08-12&search_mode=regular_search&source_impression_id=p3_1782660385_P3mnl7OUteOvgnjS&previous_page_section_name=1000&federated_search_id=f9650087-f033-44c1-b85a-26c9867667c9" target="_blank" class="btn btn-primary btn-nav" data-i18n="btn-book-airbnb">Prenota su Airbnb</a>
+                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Apri menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home" class="mobile-link" data-i18n="menu-home">Home</a>
+        <a href="#apartment" class="mobile-link" data-i18n="menu-apartment">L'Appartamento</a>
+        <a href="#gallery" class="mobile-link" data-i18n="menu-gallery">Galleria</a>
+        <a href="#location" class="mobile-link" data-i18n="menu-location">Dove Siamo</a>
+        <a href="#contact" class="mobile-link" data-i18n="menu-contact">Contatti</a>
+        <a href="https://it.airbnb.ch/rooms/1317966183520064227?adults=2&check_in=2026-08-09&check_out=2026-08-12&search_mode=regular_search&source_impression_id=p3_1782660385_P3mnl7OUteOvgnjS&previous_page_section_name=1000&federated_search_id=f9650087-f033-44c1-b85a-26c9867667c9" target="_blank" class="btn btn-primary w-full text-center" data-i18n="btn-book-airbnb">Prenota su Airbnb</a>
+    </div>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="https://i.postimg.cc/hvpwk61w/vista2.jpg" alt="Vista dal balcone del B&B Il Gabbiano su Monopoli">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero-badge">Puglia, Monopoli Centro Storico</span>
+                <h1 data-i18n="hero-title">Un'oasi di tranquillità nel cuore di Monopoli</h1>
+                <p data-i18n="hero-subtitle">Incantevole bilocale a pochi metri dal mare, dove il fascino delle antiche mura incontra il comfort moderno.</p>
+                <div class="hero-ctas">
+                    <a href="https://it.airbnb.ch/rooms/1317966183520064227?adults=2&check_in=2026-08-09&check_out=2026-08-12&search_mode=regular_search&source_impression_id=p3_1782660385_P3mnl7OUteOvgnjS&previous_page_section_name=1000&federated_search_id=f9650087-f033-44c1-b85a-26c9867667c9" target="_blank" class="btn btn-primary btn-lg" id="hero-airbnb-btn">
+                        <i data-lucide="external-link"></i>
+                        <span data-i18n="btn-book-airbnb">Prenota su Airbnb</span>
+                    </a>
+                    <a href="#apartment" class="btn btn-outline btn-lg">
+                        <span data-i18n="btn-discover">Scopri l'Appartamento</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#apartment" class="scroll-down" aria-label="Scorri giù">
+                <div class="mouse"></div>
+            </a>
+        </section>
+
+        <!-- Quick Specs Section -->
+        <section class="specs-bar">
+            <div class="container specs-grid">
+                <div class="spec-item">
+                    <i data-lucide="users"></i>
+                    <div>
+                        <h4 data-i18n="spec-guests-title">Ospiti</h4>
+                        <p data-i18n="spec-guests-text">Fino a 4 Persone</p>
+                    </div>
+                </div>
+                <div class="spec-divider"></div>
+                <div class="spec-item">
+                    <i data-lucide="bed"></i>
+                    <div>
+                        <h4 data-i18n="spec-beds-title">Letti</h4>
+                        <p data-i18n="spec-beds-text">1 Matrimoniale, 1 Divano Letto</p>
+                    </div>
+                </div>
+                <div class="spec-divider"></div>
+                <div class="spec-item">
+                    <i data-lucide="maximize"></i>
+                    <div>
+                        <h4 data-i18n="spec-size-title">Superficie</h4>
+                        <p>65 m²</p>
+                    </div>
+                </div>
+                <div class="spec-divider"></div>
+                <div class="spec-item">
+                    <i data-lucide="map-pin"></i>
+                    <div>
+                        <h4 data-i18n="spec-location-title">Distanza Mare</h4>
+                        <p data-i18n="spec-location-text">A soli 200 metri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apartment Details & Info -->
+        <section id="apartment" class="section section-apartment">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="apt-title">Il Nostro Appartamento</h2>
+                    <p class="section-subtitle" data-i18n="apt-subtitle">Comfort e stile tipico pugliese per un soggiorno indimenticabile nel centro storico</p>
+                </div>
+                
+                <div class="apartment-showcase">
+                    <!-- Carousel Slider of Room Photos -->
+                    <div class="slider-wrapper">
+                        <div class="room-slider" id="room-slider">
+                            <div class="slide active">
+                                <img src="https://i.postimg.cc/mkjfbtBm/camera1.jpg" alt="Camera da letto principale del B&B Il Gabbiano">
+                            </div>
+                            <div class="slide">
+                                <img src="https://i.postimg.cc/TYkMFLkw/salone3.jpg" alt="Salone luminoso del B&B Il Gabbiano">
+                            </div>
+                            <div class="slide">
+                                <img src="https://i.postimg.cc/c41GFMB2/salone1.jpg" alt="Salone con tavolo da pranzo">
+                            </div>
+                            <div class="slide">
+                                <img src="https://i.postimg.cc/GpjtH0vt/salone6.jpg" alt="Salotto accogliente con TV">
+                            </div>
+                            <div class="slide">
+                                <img src="https://i.postimg.cc/mgCtW1DQ/camera3.jpg" alt="Particolare del letto matrimoniale">
+                            </div>
+                            <div class="slide">
+                                <img src="https://i.postimg.cc/J01vdMZZ/vista3.jpg" alt="Balconcino con vista sulle viuzze storiche">
+                            </div>
+                        </div>
+                        
+                        <button class="slider-btn prev" id="slider-prev-btn" aria-label="Immagine precedente">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" id="slider-next-btn" aria-label="Immagine successiva">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots" id="slider-dots">
+                            <!-- JS will inject dots dynamically -->
+                        </div>
+                    </div>
+                    
+                    <!-- Apartment Text Info -->
+                    <div class="apartment-details-content">
+                        <h3 data-i18n="apt-heading">Un bilocale di charme con balcone</h3>
+                        <p class="desc" data-i18n="apt-desc-1">Incantevole bilocale situato nel pittoresco centro storico di Monopoli. L'alloggio unisce con stile l'architettura originaria, caratterizzata da spesse mura che mantengono freschi gli ambienti, a arredi moderni e funzionali scelti per il massimo comfort dei nostri ospiti.</p>
+                        <p class="desc" data-i18n="apt-desc-2">La posizione è ideale per immergersi nelle atmosfere autentiche della città pugliese: percorrendo le caratteristiche viuzze in pietra bianca, in soli 3 minuti a piedi potrai raggiungere la celebre spiaggia di Cala Porta Vecchia, i ristoranti tipici di mare, le botteghe artigiane e i principali monumenti storici.</p>
+                        
+                        <div class="amenities-highlights">
+                            <h4 data-i18n="apt-amenities-title">I Servizi inclusi:</h4>
+                            <div class="amenities-grid">
+                                <div class="amenity-item-card">
+                                    <i data-lucide="wifi"></i>
+                                    <span data-i18n="am-wifi">Wi-Fi ad alta velocità</span>
+                                </div>
+                                <div class="amenity-item-card">
+                                    <i data-lucide="wind"></i>
+                                    <span data-i18n="am-ac">Aria condizionata</span>
+                                </div>
+                                <div class="amenity-item-card">
+                                    <i data-lucide="tv"></i>
+                                    <span data-i18n="am-tv">Smart TV LCD</span>
+                                </div>
+                                <div class="amenity-item-card">
+                                    <i data-lucide="shower-head"></i>
+                                    <span data-i18n="am-bath">Bagno privato completo</span>
+                                </div>
+                                <div class="amenity-item-card">
+                                    <i data-lucide="door-open"></i>
+                                    <span data-i18n="am-balcony">Balconi vista centro</span>
+                                </div>
+                                <div class="amenity-item-card">
+                                    <i data-lucide="coffee"></i>
+                                    <span data-i18n="am-kitchen">Cucina attrezzata</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section section-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="gallery-title">Galleria Fotografica</h2>
+                    <p class="section-subtitle" data-i18n="gallery-subtitle">Guarda i dettagli dell'appartamento e le meraviglie di Monopoli</p>
+                </div>
+                
+                <!-- Category Filter Tabs -->
+                <div class="gallery-tabs">
+                    <button class="tab-btn active" data-category="all" data-i18n="tab-all">Tutte</button>
+                    <button class="tab-btn" data-category="rooms" data-i18n="tab-rooms">Interni</button>
+                    <button class="tab-btn" data-category="surroundings" data-i18n="tab-surroundings">Monopoli e Dintorni</button>
+                </div>
+                
+                <!-- Photo Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Photo items will be injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section (Dove siamo) -->
+        <section id="location" class="section section-location">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="loc-title">Dove Siamo</h2>
+                    <p class="section-subtitle" data-i18n="loc-subtitle">Nel cuore pulsante del centro storico, a due passi dal mare di Monopoli</p>
+                </div>
+                
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="address-box">
+                            <i data-lucide="map-pin" class="address-icon"></i>
+                            <div>
+                                <h3 data-i18n="loc-address-heading">Indirizzo</h3>
+                                <p class="address-text">Largo Amalfitana 20, 70043 Monopoli (BA), Puglia, Italia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="how-to-get-there">
+                            <h3 data-i18n="loc-how-title">Come raggiungerci</h3>
+                            
+                            <div class="transport-option">
+                                <div class="transport-header">
+                                    <i data-lucide="car"></i>
+                                    <span data-i18n="loc-car-title">In Auto</span>
+                                </div>
+                                <p data-i18n="loc-car-desc">Dall'autostrada A14, uscita Bari Nord/Sud, procedere sulla SS16 in direzione Brindisi fino all'uscita Monopoli. Il centro storico è una ZTL (Zona a Traffico Limitato), ma sono disponibili comodi parcheggi liberi e a pagamento a circa 200 metri dal B&B.</p>
+                            </div>
+                            
+                            <div class="transport-option">
+                                <div class="transport-header">
+                                    <i data-lucide="train"></i>
+                                    <span data-i18n="loc-train-title">In Treno</span>
+                                </div>
+                                <p data-i18n="loc-train-desc">La stazione di Monopoli è servita da treni regionali ed intercity diretti da Bari e Lecce. Il B&B dista circa 1.2 km dalla stazione, percorribile in 15 minuti a piedi o in pochi minuti di taxi.</p>
+                            </div>
+                            
+                            <div class="transport-option">
+                                <div class="transport-header">
+                                    <i data-lucide="plane"></i>
+                                    <span data-i18n="loc-plane-title">In Aereo</span>
+                                </div>
+                                <p data-i18n="loc-plane-desc">Gli aeroporti più vicini sono Bari Palese (BRI) a circa 60 km e Brindisi Papola Casale (BDS) a circa 70 km. Entrambi offrono collegamenti in treno, bus navetta o auto a noleggio per Monopoli.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="nearby-places">
+                            <h3 data-i18n="loc-nearby-title">Nelle vicinanze</h3>
+                            <ul class="nearby-list">
+                                <li>
+                                    <span data-i18n="loc-poi-1">Cala Porta Vecchia (Spiaggia cittadina)</span>
+                                    <strong>200 m (3 min a piedi)</strong>
+                                </li>
+                                <li>
+                                    <span data-i18n="loc-poi-2">Cattedrale di Maria SS. della Madia</span>
+                                    <strong>300 m (4 min a piedi)</strong>
+                                </li>
+                                <li>
+                                    <span data-i18n="loc-poi-3">Castello Carlo V</span>
+                                    <strong>400 m (5 min a piedi)</strong>
+                                </li>
+                                <li>
+                                    <span data-i18n="loc-poi-4">Porto Vecchio di Monopoli</span>
+                                    <strong>350 m (4 min a piedi)</strong>
+                                </li>
+                                <li>
+                                    <span data-i18n="loc-poi-5">Piazza Giuseppe Garibaldi (Movida e ristoranti)</span>
+                                    <strong>150 m (2 min a piedi)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Map Embed -->
+                    <div class="location-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Largo%20Amalfitana%2020,%20Monopoli&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mappa di Monopoli B&B Il Gabbiano">
+                        </iframe>
+                        <a href="https://www.google.com/maps/place/Largo+Amalfitana,+20,+70043+Monopoli+BA/" target="_blank" class="map-link-btn">
+                            <i data-lucide="navigation"></i>
+                            <span data-i18n="btn-open-google-maps">Apri in Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Quote Request Form -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact-title">Richiedi Informazioni o Preventivo</h2>
+                    <p class="section-subtitle" data-i18n="contact-subtitle">Mettiti in contatto diretto con noi per ricevere tariffe personalizzate o chiarire qualsiasi dubbio</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Direct Contacts Cards -->
+                    <div class="contact-info-cards">
+                        
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h3 data-i18n="card-phone">Telefono / WhatsApp</h3>
+                                <p class="info-val"><a href="tel:+393389290144">+39 338 929 0144</a></p>
+                                <span class="info-note" data-i18n="card-phone-note">Disponibile anche per messaggi WhatsApp</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h3>Email</h3>
+                                <p class="info-val"><a href="mailto:riccardoranieri00@gmail.com">riccardoranieri00@gmail.com</a></p>
+                                <span class="info-note" data-i18n="card-email-note">Rispondiamo solitamente entro poche ore</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h3 data-i18n="card-hours">Orari Check-in / Out</h3>
+                                <p class="info-val" data-i18n="card-hours-val">Check-in: 14:00 - 20:00<br>Check-out: entro le 10:30</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card-whatsapp">
+                            <h3 data-i18n="wa-card-title">Risposta Rapida WhatsApp</h3>
+                            <p data-i18n="wa-card-desc">Vuoi fare in fretta? Clicca sul pulsante sottostante per aprire direttamente una conversazione WhatsApp precompilata con noi.</p>
+                            <a href="https://wa.me/393389290144?text=Ciao!%20Vorrei%20informazioni%20sulle%20disponibilit%C3%A0%20di%20soggiorno%20per%20il%20B%26B%20Il%20Gabbiano." target="_blank" class="btn btn-whatsapp">
+                                <i data-lucide="message-square"></i>
+                                <span data-i18n="btn-whatsapp-chat">Scrivici su WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="booking-form" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name"><span data-i18n="label-name">Nome e Cognome</span> <span class="required">*</span></label>
+                                    <input type="text" id="form-name" placeholder="Inserisci il tuo nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email"><span>Email</span> <span class="required">*</span></label>
+                                    <input type="email" id="form-email" placeholder="esempio@email.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-checkin"><span data-i18n="label-checkin">Data di Arrivo (Check-in)</span></label>
+                                    <input type="date" id="form-checkin">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-checkout"><span data-i18n="label-checkout">Data di Partenza (Check-out)</span></label>
+                                    <input type="date" id="form-checkout">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-guests"><span data-i18n="label-guests">Numero di Ospiti</span></label>
+                                <select id="form-guests">
+                                    <option value="1">1 Ospite</option>
+                                    <option value="2" selected>2 Ospiti</option>
+                                    <option value="3">3 Ospiti</option>
+                                    <option value="4">4 Ospiti</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message"><span data-i18n="label-message">Messaggio / Richiesta Preventivo</span> <span class="required">*</span></label>
+                                <textarea id="form-message" rows="5" placeholder="Scrivi qui i dettagli della tua richiesta o domande particolari..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-full text-center" id="submit-form-btn">
+                                <i data-lucide="send"></i>
+                                <span data-i18n="btn-send">Invia Richiesta</span>
+                            </button>
+                        </form>
+                        
+                        <!-- Success message state (hidden initially) -->
+                        <div id="form-success" class="form-success-card hidden">
+                            <div class="success-icon">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                            <h3 data-i18n="success-title">Richiesta Ricevuta!</h3>
+                            <p data-i18n="success-desc">Grazie per averci contattato. Ti risponderemo all'indirizzo email fornito nel minor tempo possibile.</p>
+                            <p class="success-alternate" data-i18n="success-alternative">Se preferisci una risposta immediata, puoi inviare i dati compilati direttamente su WhatsApp:</p>
+                            <a href="#" id="send-success-wa" target="_blank" class="btn btn-whatsapp w-full justify-center">
+                                <i data-lucide="message-square"></i>
+                                <span data-i18n="btn-send-wa">Invia tramite WhatsApp</span>
+                            </a>
+                            <button id="reset-form-btn" class="btn btn-link" data-i18n="btn-new-msg">Invia un altro messaggio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-title">Il Gabbiano</span>
+                    <span class="logo-subtitle">B&B</span>
+                </a>
+                <p data-i18n="footer-tagline">La tua accogliente casa nel centro storico di Monopoli. Il fascino della Puglia a due passi dal mare Adriatico.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 data-i18n="footer-links-title">Collegamenti</h4>
+                <a href="#home" data-i18n="menu-home">Home</a>
+                <a href="#apartment" data-i18n="menu-apartment">L'Appartamento</a>
+                <a href="#gallery" data-i18n="menu-gallery">Galleria</a>
+                <a href="#location" data-i18n="menu-location">Dove Siamo</a>
+                <a href="#contact" data-i18n="menu-contact">Contatti</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n="footer-contacts-title">Contatti</h4>
+                <p><i data-lucide="phone" class="icon-xs"></i> <a href="tel:+393389290144">+39 338 929 0144</a></p>
+                <p><i data-lucide="mail" class="icon-xs"></i> <a href="mailto:riccardoranieri00@gmail.com">riccardoranieri00@gmail.com</a></p>
+                <p><i data-lucide="map-pin" class="icon-xs"></i> Largo Amalfitana 20, Monopoli (BA)</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Il Gabbiano B&B Monopoli. <span data-i18n="footer-rights">Tutti i diritti riservati.</span></p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/il_gabbiano_/" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://www.facebook.com/ilgabbianoamonopoli" target="_blank" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://wa.me/393389290144" target="_blank" aria-label="WhatsApp"><i data-lucide="message-square"></i></a>
+                    <a href="https://it.airbnb.ch/rooms/1317966183520064227?adults=2&check_in=2026-08-09&check_out=2026-08-12&search_mode=regular_search&source_impression_id=p3_1782660385_P3mnl7OUteOvgnjS&previous_page_section_name=1000&federated_search_id=f9650087-f033-44c1-b85a-26c9867667c9" target="_blank" class="airbnb-footer-icon" aria-label="Airbnb"><i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/393389290144?text=Ciao!%20Vorrei%20maggiori%20informazioni%20sulle%20disponibilit%C3%A0%20del%20B%26B%20Il%20Gabbiano%20a%20Monopoli." target="_blank" class="whatsapp-floating" aria-label="Scrivici su WhatsApp">
+        <i data-lucide="message-circle" class="icon-wa"></i>
+        <span class="tooltip" data-i18n="wa-tooltip">Serve aiuto? Scrivici!</span>
+    </a>
+
+    <!-- Photo Lightbox Modal -->
+    <div class="lightbox" id="lightbox-modal">
+        <button class="lightbox-close" id="lightbox-close-btn" aria-label="Chiudi galleria"><i data-lucide="x"></i></button>
+        <button class="lightbox-nav prev" id="lightbox-prev-btn" aria-label="Immagine precedente"><i data-lucide="chevron-left"></i></button>
+        <button class="lightbox-nav next" id="lightbox-next-btn" aria-label="Immagine successiva"><i data-lucide="chevron-right"></i></button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
