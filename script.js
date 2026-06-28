@@ -180,6 +180,166 @@ const translations = {
         "footer-contacts-title": "Contacts",
         "footer-rights": "All rights reserved.",
         "wa-tooltip": "Need help? Message us!"
+    },
+    fr: {
+        "menu-home": "Accueil",
+        "menu-apartment": "L'Appartement",
+        "menu-gallery": "Galerie",
+        "menu-location": "Emplacement",
+        "menu-contact": "Contact",
+        "btn-book-airbnb": "Réserver sur Airbnb",
+        "btn-request-quote": "Demander un Devis",
+        "hero-badge": "Monopoli (BA), Pouilles",
+        "hero-title": "Un havre de paix au cœur de Monopoli",
+        "hero-subtitle": "Charmant appartement de deux pièces à quelques mètres de la mer, où le charme des vieux murs rencontre le confort moderne.",
+        "btn-discover": "Découvrir l'Appartement",
+        "spec-guests-title": "Voyageurs",
+        "spec-guests-text": "Jusqu'à 4 Personnes",
+        "spec-beds-title": "Lits",
+        "spec-beds-text": "1 Lit Double, 1 Canapé-lit",
+        "spec-size-title": "Superficie",
+        "spec-location-title": "Distance Mer",
+        "spec-location-text": "À seulement 200 mètres",
+        "apt-title": "Notre Appartement",
+        "apt-subtitle": "Confort et style typique des Pouilles pour un séjour inoubliable dans le centre historique",
+        "apt-heading": "Un appartement de charme avec balcon",
+        "apt-desc-1": "Charmant appartement de deux pièces situé dans le pittoresque centre historique de Monopoli. Le logement allie avec style l'architecture d'origine, caractérisée par des murs épais qui gardent les pièces fraîches, et un mobilier moderne et fonctionnel choisi pour le plus grand confort de nos clients.",
+        "apt-desc-2": "L'emplacement est idéal pour s'immerger dans l'atmosphère authentique de cette ville des Pouilles : en vous promenant dans les ruelles caractéristiques en pierre blanche, vous rejoindrez en seulement 3 minutes à pied la célèbre plage de Cala Porta Vecchia, les restaurants de poisson typiques, les boutiques d'artisans et les principaux monuments historiques.",
+        "apt-amenities-title": "Services inclus :",
+        "am-wifi": "Wi-Fi haut débit",
+        "am-ac": "Climatisation",
+        "am-tv": "Smart TV LCD",
+        "am-bath": "Salle de bain privée",
+        "am-balcony": "Balcons vue centre",
+        "am-kitchen": "Cuisine équipée",
+        "gallery-title": "Galerie Photos",
+        "gallery-subtitle": "Découvrez les détails de l'appartement et les merveilles de Monopoli",
+        "tab-all": "Toutes",
+        "tab-rooms": "Intérieurs",
+        "tab-surroundings": "Monopoli et Alentours",
+        "loc-title": "Où nous trouver",
+        "loc-subtitle": "Au cœur du centre historique, à deux pas de la mer de Monopoli",
+        "loc-address-heading": "Adresse",
+        "loc-how-title": "Comment s'y rendre",
+        "loc-car-title": "En Voiture",
+        "loc-car-desc": "Depuis l'autoroute A14, sortie Bari Nord/Sud, continuez sur la SS16 en direction de Brindisi jusqu'à la sortie Monopoli. Le centre historique est une zone à trafic limité (ZTL), mais des parkings publics gratuits et payants sont disponibles à environ 200 mètres du B&B.",
+        "loc-train-title": "En Train",
+        "loc-train-desc": "La gare de Monopoli est desservie par des trains régionaux et interurbains depuis Bari et Lecce. Le B&B se trouve à environ 1,2 km de la gare, soit 15 minutes à pied ou quelques minutes en taxi.",
+        "loc-plane-title": "En Avion",
+        "loc-plane-desc": "Les aéroports les plus proches sont Bari Palese (BRI) à 60 km et Brindisi Papola Casale (BDS) à 70 km. Tous deux proposent des liaisons en train, navette ou voiture de location vers Monopoli.",
+        "loc-nearby-title": "À proximité",
+        "loc-poi-1": "Cala Porta Vecchia (Plage de la ville)",
+        "loc-poi-2": "Cathédrale Maria SS. della Madia",
+        "loc-poi-3": "Château Charles V",
+        "loc-poi-4": "Vieux Port de Monopoli",
+        "loc-poi-5": "Piazza Giuseppe Garibaldi (Vie nocturne)",
+        "btn-open-google-maps": "Ouvrir dans Google Maps",
+        "contact-title": "Demander des Infos ou un Devis",
+        "contact-subtitle": "Contactez-nous directement pour recevoir des tarifs personnalisés ou poser vos questions",
+        "card-phone": "Téléphone / WhatsApp",
+        "card-phone-note": "Aussi disponible pour messages WhatsApp",
+        "card-email-note": "Nous répondons généralement sous quelques heures",
+        "card-hours": "Horaires Arrivée / Départ",
+        "card-hours-val": "Arrivée : 14h00 - 20h00<br>Départ : avant 10h30",
+        "wa-card-title": "Réponse rapide WhatsApp",
+        "wa-card-desc": "Vous êtes pressé ? Cliquez sur le bouton ci-dessous pour ouvrir directement une discussion WhatsApp pré-remplie.",
+        "btn-whatsapp-chat": "Écrivez-nous sur WhatsApp",
+        "label-name": "Nom et Prénom",
+        "label-checkin": "Date d'Arrivée (Check-in)",
+        "label-checkout": "Date de Départ (Check-out)",
+        "label-guests": "Nombre de Voyageurs",
+        "label-message": "Message / Demande de Devis",
+        "btn-send": "Envoyer la Demande",
+        "success-title": "Demande Reçue !",
+        "success-desc": "Merci de nous avoir contactés. Nous vous répondrons par e-mail dans les plus brefs délais.",
+        "success-alternative": "Si vous préférez une réponse immédiate, vous pouvez nous envoyer les détails directement sur WhatsApp :",
+        "btn-send-wa": "Envoyer par WhatsApp",
+        "btn-new-msg": "Envoyer un autre message",
+        "footer-tagline": "Votre maison accueillante dans le centre historique de Monopoli. Le charme des Pouilles à deux pas de la mer Adriatique.",
+        "footer-links-title": "Liens Rapides",
+        "footer-contacts-title": "Contacts",
+        "footer-rights": "Tous droits réservés.",
+        "wa-tooltip": "Besoin d'aide ? Écrivez-nous !"
+    },,
+    es: {
+        "menu-home": "Inicio",
+        "menu-apartment": "El Apartamento",
+        "menu-gallery": "Galería",
+        "menu-location": "Ubicación",
+        "menu-contact": "Contacto",
+        "btn-book-airbnb": "Reservar en Airbnb",
+        "btn-request-quote": "Solicitar Presupuesto",
+        "hero-badge": "Monopoli (BA), Apulia",
+        "hero-title": "Un oasis de tranquilidad en el corazón de Monopoli",
+        "hero-subtitle": "Encantador apartamento de dos habitaciones a pocos metros del mar, donde el encanto de los muros antiguos se une al confort moderno.",
+        "btn-discover": "Descubrir el Apartamento",
+        "spec-guests-title": "Huéspedes",
+        "spec-guests-text": "Hasta 4 Personas",
+        "spec-beds-title": "Camas",
+        "spec-beds-text": "1 Cama Doble, 1 Sofá Cama",
+        "spec-size-title": "Superficie",
+        "spec-location-title": "Distancia al Mar",
+        "spec-location-text": "A solo 200 metros",
+        "apt-title": "Nuestro Apartamento",
+        "apt-subtitle": "Confort y estilo típico de Apulia para una estancia inolvidable en el centro histórico",
+        "apt-heading": "Un apartamento con encanto y balcón",
+        "apt-desc-1": "Encantador apartamento de dos habitaciones situado en el pintoresco centro histórico de Monopoli. El alojamiento combina con estilo la arquitectura original, caracterizada por gruesos muros que mantienen las habitaciones frescas, con un mobiliario moderno y funcional elegido para el máximo confort de nuestros huéspedes.",
+        "apt-desc-2": "La ubicación es ideal para sumergirse en la atmósfera auténtica de la ciudad de Apulia: paseando por las características calles de piedra blanca, en solo 3 minutos a pie llegarás a la famosa playa de Cala Porta Vecchia, restaurantes típicos de pescado, tiendas de artesanía y los principales monumentos históricos.",
+        "apt-amenities-title": "Servicios incluidos:",
+        "am-wifi": "Wi-Fi de alta velocidad",
+        "am-ac": "Aire acondicionado",
+        "am-tv": "Smart TV LCD",
+        "am-bath": "Baño privado completo",
+        "am-balcony": "Balcones con vista al centro",
+        "am-kitchen": "Cocina equipada",
+        "gallery-title": "Galería de Fotos",
+        "gallery-subtitle": "Descubre los detalles del apartamento y las maravillas de Monopoli",
+        "tab-all": "Todas",
+        "tab-rooms": "Interiores",
+        "tab-surroundings": "Monopoli y Alrededores",
+        "loc-title": "Dónde Estamos",
+        "loc-subtitle": "En el corazón del centro histórico, a dos pasos del mar de Monopoli",
+        "loc-address-heading": "Dirección",
+        "loc-how-title": "Cómo llegar",
+        "loc-car-title": "En Coche",
+        "loc-car-desc": "Desde la autopista A14, salida Bari Nord/Sud, continuar por la SS16 en dirección Brindisi hasta la salida Monopoli. El centro histórico es una Zona de Tráfico Limitado (ZTL), pero hay aparcamientos públicos gratuitos y de pago a unos 200 metros del B&B.",
+        "loc-train-title": "En Tren",
+        "loc-train-desc": "La estación de tren de Monopoli está conectada con trenes regionales e interurbanos desde Bari y Lecce. El B&B está a 1,2 km de la estación, unos 15 minutos a pie o unos minutos en taxi.",
+        "loc-plane-title": "En Avión",
+        "loc-plane-desc": "Los aeropuertos más cercanos son Bari Palese (BRI) a 60 km y Brindisi Papola Casale (BDS) a 70 km. Ambos ofrecen conexiones en tren, autobús de enlace o coche de alquiler a Monopoli.",
+        "loc-nearby-title": "En las cercanías",
+        "loc-poi-1": "Cala Porta Vecchia (Playa urbana)",
+        "loc-poi-2": "Catedral de Maria SS. della Madia",
+        "loc-poi-3": "Castillo de Carlos V",
+        "loc-poi-4": "Puerto Viejo de Monopoli",
+        "loc-poi-5": "Piazza Giuseppe Garibaldi (Vida nocturna)",
+        "btn-open-google-maps": "Abrir en Google Maps",
+        "contact-title": "Solicitar Información o Presupuesto",
+        "contact-subtitle": "Ponte en contacto directo con nosotros para recibir tarifas personalizadas o aclarar cualquier duda",
+        "card-phone": "Teléfono / WhatsApp",
+        "card-phone-note": "También disponible para mensajes de WhatsApp",
+        "card-email-note": "Normalmente respondemos en pocas horas",
+        "card-hours": "Horario Entrada / Salida",
+        "card-hours-val": "Entrada: 14:00 - 20:00<br>Salida: antes de las 10:30",
+        "wa-card-title": "Respuesta Rápida WhatsApp",
+        "wa-card-desc": "¿Tienes prisa? Haz clic en el botón de abajo para abrir una conversación de WhatsApp pre-redactada directamente con nosotros.",
+        "btn-whatsapp-chat": "Escríbenos en WhatsApp",
+        "label-name": "Nombre y Apellido",
+        "label-checkin": "Fecha de Entrada (Check-in)",
+        "label-checkout": "Fecha de Salida (Check-out)",
+        "label-guests": "Número de Huéspedes",
+        "label-message": "Mensaje / Solicitud de Presupuesto",
+        "btn-send": "Enviar Solicitud",
+        "success-title": "¡Solicitud Recibida!",
+        "success-desc": "Gracias por contactarnos. Responderemos a tu dirección de correo electrónico lo antes posible.",
+        "success-alternative": "Si prefieres una respuesta inmediata, puedes enviar los datos rellenados directamente por WhatsApp:",
+        "btn-send-wa": "Enviar por WhatsApp",
+        "btn-new-msg": "Enviar otro mensaje",
+        "footer-tagline": "Tu acogedor hogar en el centro histórico de Monopoli. El encanto de Apulia a dos pasos del mar Adriático.",
+        "footer-links-title": "Enlaces Rápidos",
+        "footer-contacts-title": "Contactos",
+        "footer-rights": "Todos los derechos reservados.",
+        "wa-tooltip": "¿Necesitas ayuda? ¡Escríbenos!"
     }
 };
 
@@ -202,11 +362,21 @@ function setLanguage(lang) {
     currentLanguage = lang;
     document.documentElement.lang = lang;
     
-    // Toggle button text
+    // Update main button text
     const langBtnText = document.getElementById('lang-text');
     if (langBtnText) {
-        langBtnText.textContent = lang === 'it' ? 'EN' : 'IT';
+        langBtnText.textContent = lang.toUpperCase();
     }
+
+    // Update active class in dropdown options
+    const options = document.querySelectorAll('.lang-opt');
+    options.forEach(opt => {
+        if (opt.getAttribute('data-lang') === lang) {
+            opt.classList.add('active');
+        } else {
+            opt.classList.remove('active');
+        }
+    });
     
     // Translate all elements with data-i18n
     const elementsToTranslate = document.querySelectorAll('[data-i18n]');
@@ -536,12 +706,30 @@ if (resetFormBtn) {
     });
 }
 
-// Language Toggle button click listener
+// Language Dropdown Selector Logic
 const langBtn = document.getElementById('lang-btn');
-if (langBtn) {
-    langBtn.addEventListener('click', () => {
-        const targetLang = currentLanguage === 'it' ? 'en' : 'it';
-        setLanguage(targetLang);
+const langDropdown = document.getElementById('lang-dropdown');
+const langOpts = document.querySelectorAll('.lang-opt');
+
+if (langBtn && langDropdown) {
+    // Toggle dropdown on click
+    langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('open');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('open');
+    });
+
+    // Language option click handlers
+    langOpts.forEach(opt => {
+        opt.addEventListener('click', () => {
+            const selectedLang = opt.getAttribute('data-lang');
+            setLanguage(selectedLang);
+            langDropdown.classList.remove('open');
+        });
     });
 }
 
