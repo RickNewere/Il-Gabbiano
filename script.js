@@ -28,6 +28,7 @@ const translations = {
         "menu-location": "Dove Siamo",
         "menu-contact": "Contatti",
         "btn-book-airbnb": "Prenota su Airbnb",
+        "btn-request-quote": "Richiedi Preventivo",
         "hero-badge": "Puglia, Monopoli Centro Storico",
         "hero-title": "Un'oasi di tranquillità nel cuore di Monopoli",
         "hero-subtitle": "Incantevole bilocale a pochi metri dal mare, dove il fascino delle antiche mura incontra il comfort moderno.",
@@ -107,6 +108,7 @@ const translations = {
         "menu-location": "Location",
         "menu-contact": "Contact",
         "btn-book-airbnb": "Book on Airbnb",
+        "btn-request-quote": "Request a Quote",
         "hero-badge": "Puglia, Monopoli Historic Center",
         "hero-title": "An oasis of tranquility in the heart of Monopoli",
         "hero-subtitle": "Charming two-room apartment just steps from the sea, where ancient walls meet modern comfort.",
@@ -460,7 +462,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Contact Form and WhatsApp message drafting
+// Contact Form — invio email via mailto: a riccardoranieri00@gmail.com
 const bookingForm = document.getElementById('booking-form');
 const formSuccess = document.getElementById('form-success');
 const sendSuccessWaBtn = document.getElementById('send-success-wa');
@@ -469,44 +471,54 @@ const resetFormBtn = document.getElementById('reset-form-btn');
 if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Grab inputs
-        const name = document.getElementById('form-name').value;
-        const email = document.getElementById('form-email').value;
+
+        // Raccolta dati form
+        const name    = document.getElementById('form-name').value.trim();
+        const email   = document.getElementById('form-email').value.trim();
         const checkin = document.getElementById('form-checkin').value;
-        const checkout = document.getElementById('form-checkout').value;
-        const guests = document.getElementById('form-guests').value;
-        const message = document.getElementById('form-message').value;
-        
-        // Simple form validation is handled by HTML5 attributes
-        
-        // Format date strings for readability if provided
-        const checkinStr = checkin ? new Date(checkin).toLocaleDateString(currentLanguage === 'it' ? 'it-IT' : 'en-US') : 'N/D';
-        const checkoutStr = checkout ? new Date(checkout).toLocaleDateString(currentLanguage === 'it' ? 'it-IT' : 'en-US') : 'N/D';
-        
-        // Construct the WhatsApp message draft
-        let waText = '';
-        if (currentLanguage === 'it') {
-            waText = `Ciao! Mi chiamo ${name}. Vorrei fare una richiesta per il B&B Il Gabbiano.\n\n` +
-                     `- Email di contatto: ${email}\n` +
-                     `- Arrivo: ${checkinStr}\n` +
-                     `- Partenza: ${checkoutStr}\n` +
-                     `- Numero di Ospiti: ${guests}\n\n` +
-                     `Messaggio:\n"${message}"`;
-        } else {
-            waText = `Hello! My name is ${name}. I would like to make an inquiry for B&B Il Gabbiano.\n\n` +
-                     `- Contact Email: ${email}\n` +
-                     `- Check-in: ${checkinStr}\n` +
-                     `- Check-out: ${checkoutStr}\n` +
-                     `- Guests: ${guests}\n\n` +
-                     `Inquiry details:\n"${message}"`;
-        }
-        
-        // Set the link on the success WhatsApp button
-        const encodedText = encodeURIComponent(waText);
-        sendSuccessWaBtn.href = `https://wa.me/393389290144?text=${encodedText}`;
-        
-        // Show success visual state
+        const checkout= document.getElementById('form-checkout').value;
+        const guests  = document.getElementById('form-guests').value;
+        const message = document.getElementById('form-message').value.trim();
+
+        // Formattazione date leggibili
+        const fmtDate = (d) => d ? new Date(d + 'T12:00:00').toLocaleDateString('it-IT', { day:'2-digit', month:'2-digit', year:'numeric' }) : 'Non specificata';
+        const checkinStr  = fmtDate(checkin);
+        const checkoutStr = fmtDate(checkout);
+
+        // ── SUBJECT EMAIL ──────────────────────────────────────────────────────
+        const subject = `RICHIESTA APPARTAMENTO per il ${checkinStr} – ${checkoutStr}`;
+
+        // ── BODY EMAIL ─────────────────────────────────────────────────────────
+        const body =
+`Nuova richiesta ricevuta dal sito Il Gabbiano B&B
+${'─'.repeat(45)}
+
+Nome e Cognome  : ${name}
+Email ospite    : ${email}
+Check-in        : ${checkinStr}
+Check-out       : ${checkoutStr}
+Numero di ospiti: ${guests} ${ guests === '1' ? 'persona' : 'persone'}
+
+Messaggio / Richiesta:
+${message}
+
+${'─'.repeat(45)}
+Email generata automaticamente dal sito ilgabbiano.it`;
+
+        // ── APERTURA CLIENT EMAIL ──────────────────────────────────────────────
+        const mailtoLink = `mailto:riccardoranieri00@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+
+        // ── LINK WHATSAPP DI RISERVA ───────────────────────────────────────────
+        const waText = `Ciao Riccardo! Mi chiamo ${name} e vorrei richiedere un preventivo per il B&B Il Gabbiano.\n\n` +
+                       `✅ Check-in: ${checkinStr}\n` +
+                       `✅ Check-out: ${checkoutStr}\n` +
+                       `👤 Ospiti: ${guests}\n` +
+                       `📧 Email: ${email}\n\n` +
+                       `💬 "${message}"`;
+        sendSuccessWaBtn.href = `https://wa.me/393389290144?text=${encodeURIComponent(waText)}`;
+
+        // Mostra schermata di conferma
         bookingForm.classList.add('hidden');
         formSuccess.classList.remove('hidden');
     });
