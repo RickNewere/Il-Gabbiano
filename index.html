@@ -388,32 +388,38 @@
 
                     <!-- Contact Form -->
                     <div class="contact-form-wrapper">
-                        <form id="booking-form" class="booking-form">
+                        <form id="booking-form" class="booking-form" action="https://formsubmit.co/ajax/riccardoranieri00@gmail.com" method="POST">
+                            <!-- FormSubmit config -->
+                            <input type="hidden" name="_subject" id="form-subject" value="RICHIESTA APPARTAMENTO">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none">
+
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="form-name"><span data-i18n="label-name">Nome e Cognome</span> <span class="required">*</span></label>
-                                    <input type="text" id="form-name" placeholder="Inserisci il tuo nome" required>
+                                    <input type="text" id="form-name" name="Nome e Cognome" placeholder="Inserisci il tuo nome" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form-email"><span>Email</span> <span class="required">*</span></label>
-                                    <input type="email" id="form-email" placeholder="esempio@email.com" required>
+                                    <label for="form-email"><span>Email Ospite</span> <span class="required">*</span></label>
+                                    <input type="email" id="form-email" name="Email Ospite" placeholder="esempio@email.com" required>
                                 </div>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="form-checkin"><span data-i18n="label-checkin">Data di Arrivo (Check-in)</span></label>
-                                    <input type="date" id="form-checkin">
+                                    <input type="date" id="form-checkin" name="Check-in">
                                 </div>
                                 <div class="form-group">
                                     <label for="form-checkout"><span data-i18n="label-checkout">Data di Partenza (Check-out)</span></label>
-                                    <input type="date" id="form-checkout">
+                                    <input type="date" id="form-checkout" name="Check-out">
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label for="form-guests"><span data-i18n="label-guests">Numero di Ospiti</span></label>
-                                <select id="form-guests">
+                                <select id="form-guests" name="Numero Ospiti">
                                     <option value="1">1 Ospite</option>
                                     <option value="2" selected>2 Ospiti</option>
                                     <option value="3">3 Ospiti</option>
@@ -423,7 +429,7 @@
                             
                             <div class="form-group">
                                 <label for="form-message"><span data-i18n="label-message">Messaggio / Richiesta Preventivo</span> <span class="required">*</span></label>
-                                <textarea id="form-message" rows="5" placeholder="Scrivi qui i dettagli della tua richiesta o domande particolari..." required></textarea>
+                                <textarea id="form-message" name="Messaggio" rows="5" placeholder="Scrivi qui i dettagli della tua richiesta o domande particolari..." required></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary btn-lg w-full text-center" id="submit-form-btn">

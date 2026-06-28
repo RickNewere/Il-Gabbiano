@@ -462,7 +462,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Contact Form — invio email via mailto: a riccardoranieri00@gmail.com
+// Contact Form — invio automatico email via FormSubmit.co a riccardoranieri00@gmail.com
 const bookingForm = document.getElementById('booking-form');
 const formSuccess = document.getElementById('form-success');
 const sendSuccessWaBtn = document.getElementById('send-success-wa');
@@ -472,7 +472,7 @@ if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Raccolta dati form
+        // Raccolta dati
         const name    = document.getElementById('form-name').value.trim();
         const email   = document.getElementById('form-email').value.trim();
         const checkin = document.getElementById('form-checkin').value;
@@ -485,42 +485,46 @@ if (bookingForm) {
         const checkinStr  = fmtDate(checkin);
         const checkoutStr = fmtDate(checkout);
 
-        // ── SUBJECT EMAIL ──────────────────────────────────────────────────────
-        const subject = `RICHIESTA APPARTAMENTO per il ${checkinStr} – ${checkoutStr}`;
+        // Aggiorna l'oggetto email con le date dinamiche
+        const subjectField = document.getElementById('form-subject');
+        subjectField.value = `RICHIESTA APPARTAMENTO per il ${checkinStr} – ${checkoutStr}`;
 
-        // ── BODY EMAIL ─────────────────────────────────────────────────────────
-        const body =
-`Nuova richiesta ricevuta dal sito Il Gabbiano B&B
-${'─'.repeat(45)}
+        // Disabilita bottone durante l'invio
+        const submitBtn = document.getElementById('submit-form-btn');
+        submitBtn.disabled = true;
+        submitBtn.querySelector('span').textContent = 'Invio in corso...';
 
-Nome e Cognome  : ${name}
-Email ospite    : ${email}
-Check-in        : ${checkinStr}
-Check-out       : ${checkoutStr}
-Numero di ospiti: ${guests} ${ guests === '1' ? 'persona' : 'persone'}
+        // Invio tramite FormSubmit AJAX
+        const formData = new FormData(bookingForm);
 
-Messaggio / Richiesta:
-${message}
+        fetch(bookingForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // ── LINK WHATSAPP DI RISERVA ───────────────────────────────────────
+            const waText = `Ciao Riccardo! Mi chiamo ${name} e vorrei richiedere un preventivo per il B&B Il Gabbiano.\n\n` +
+                           `✅ Check-in: ${checkinStr}\n` +
+                           `✅ Check-out: ${checkoutStr}\n` +
+                           `👤 Ospiti: ${guests}\n` +
+                           `📧 Email: ${email}\n\n` +
+                           `💬 "${message}"`;
+            sendSuccessWaBtn.href = `https://wa.me/393389290144?text=${encodeURIComponent(waText)}`;
 
-${'─'.repeat(45)}
-Email generata automaticamente dal sito ilgabbiano.it`;
-
-        // ── APERTURA CLIENT EMAIL ──────────────────────────────────────────────
-        const mailtoLink = `mailto:riccardoranieri00@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-
-        // ── LINK WHATSAPP DI RISERVA ───────────────────────────────────────────
-        const waText = `Ciao Riccardo! Mi chiamo ${name} e vorrei richiedere un preventivo per il B&B Il Gabbiano.\n\n` +
-                       `✅ Check-in: ${checkinStr}\n` +
-                       `✅ Check-out: ${checkoutStr}\n` +
-                       `👤 Ospiti: ${guests}\n` +
-                       `📧 Email: ${email}\n\n` +
-                       `💬 "${message}"`;
-        sendSuccessWaBtn.href = `https://wa.me/393389290144?text=${encodeURIComponent(waText)}`;
-
-        // Mostra schermata di conferma
-        bookingForm.classList.add('hidden');
-        formSuccess.classList.remove('hidden');
+            // Mostra schermata di conferma
+            bookingForm.classList.add('hidden');
+            formSuccess.classList.remove('hidden');
+        })
+        .catch(error => {
+            console.error('Errore invio form:', error);
+            alert('Si è verificato un errore nell\'invio. Riprova o contattaci su WhatsApp.');
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.querySelector('span').textContent = 'Invia Richiesta';
+        });
     });
 }
 
