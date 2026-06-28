@@ -31,7 +31,6 @@ const translations = {
         "menu-contact": "Contatti",
         "btn-book-airbnb": "Prenota su Airbnb",
         "btn-request-quote": "Richiedi Preventivo",
-        "hero-badge": "Monopoli (BA), Puglia",
         "hero-title": "Un'oasi di tranquillità nel cuore di Monopoli",
         "hero-subtitle": "Incantevole bilocale a pochi metri dal mare, dove il fascino delle antiche mura incontra il comfort moderno.",
         "btn-discover": "Scopri l'Appartamento",
