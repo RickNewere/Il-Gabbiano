@@ -16,7 +16,7 @@ tsconfig.json
 package.json
 package-lock.json
 bun.lock
-.github/
+
 
 # Cartelle locali e temporanee di editor/sistemi operativi
 .DS_Store
