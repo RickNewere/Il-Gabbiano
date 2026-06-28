@@ -260,7 +260,7 @@ const translations = {
         "footer-contacts-title": "Contacts",
         "footer-rights": "Tous droits réservés.",
         "wa-tooltip": "Besoin d'aide ? Écrivez-nous !"
-    },,
+    },
     es: {
         "menu-home": "Inicio",
         "menu-apartment": "El Apartamento",
