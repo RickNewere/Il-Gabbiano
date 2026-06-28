@@ -23,13 +23,15 @@ const galleryImages = [
 const translations = {
     it: {
         "menu-home": "Home",
+        "logo-subtitle": "Casa Vacanze",
+        "hero-badge": "Monopoli (BA), Puglia",
         "menu-apartment": "L'Appartamento",
         "menu-gallery": "Galleria",
         "menu-location": "Dove Siamo",
         "menu-contact": "Contatti",
         "btn-book-airbnb": "Prenota su Airbnb",
         "btn-request-quote": "Richiedi Preventivo",
-        "hero-badge": "Puglia, Monopoli Centro Storico",
+        "hero-badge": "Monopoli (BA), Puglia",
         "hero-title": "Un'oasi di tranquillità nel cuore di Monopoli",
         "hero-subtitle": "Incantevole bilocale a pochi metri dal mare, dove il fascino delle antiche mura incontra il comfort moderno.",
         "btn-discover": "Scopri l'Appartamento",
@@ -62,9 +64,9 @@ const translations = {
         "loc-address-heading": "Indirizzo",
         "loc-how-title": "Come raggiungerci",
         "loc-car-title": "In Auto",
-        "loc-car-desc": "Dall'autostrada A14, uscita Bari Nord/Sud, procedere sulla SS16 in direzione Brindisi fino all'uscita Monopoli. Il centro storico è una ZTL (Zona a Traffico Limitato), ma sono disponibili comodi parcheggi liberi e a pagamento a circa 200 metri dal B&B.",
+        "loc-car-desc": "Dall'autostrada A14, uscita Bari Nord/Sud, procedere sulla SS16 in direzione Brindisi fino all'uscita Monopoli. Il centro storico è una ZTL (Zona a Traffico Limitato), ma sono disponibili comodi parcheggi liberi e a pagamento a circa 200 metri dalla casa vacanze.",
         "loc-train-title": "In Treno",
-        "loc-train-desc": "La stazione di Monopoli è servita da treni regionali ed intercity diretti da Bari e Lecce. Il B&B dista circa 1.2 km dalla stazione, percorribile in 15 minuti a piedi o in pochi minuti di taxi.",
+        "loc-train-desc": "La stazione di Monopoli è servita da treni regionali ed intercity diretti da Bari e Lecce. La casa vacanze dista circa 1.2 km dalla stazione, percorribile in 15 minuti a piedi o in pochi minuti di taxi.",
         "loc-plane-title": "In Aereo",
         "loc-plane-desc": "Gli aeroporti più vicini sono Bari Palese (BRI) a circa 60 km e Brindisi Papola Casale (BDS) a circa 70 km. Entrambi offrono collegamenti in treno, bus navetta o auto a noleggio per Monopoli.",
         "loc-nearby-title": "Nelle vicinanze",
@@ -103,6 +105,8 @@ const translations = {
     },
     en: {
         "menu-home": "Home",
+        "logo-subtitle": "Casa Vacanze",
+        "hero-badge": "Monopoli (BA), Puglia",
         "menu-apartment": "The Apartment",
         "menu-gallery": "Gallery",
         "menu-location": "Location",
@@ -142,9 +146,9 @@ const translations = {
         "loc-address-heading": "Address",
         "loc-how-title": "How to reach us",
         "loc-car-title": "By Car",
-        "loc-car-desc": "From the A14 highway, exit Bari Nord/Sud, continue on the SS16 towards Brindisi until the Monopoli exit. The historic center is a ZTL (Limited Traffic Zone), but public free and paid parking spaces are available about 200 meters from the B&B.",
+        "loc-car-desc": "From the A14 highway, exit Bari Nord/Sud, continue on the SS16 towards Brindisi until the Monopoli exit. The historic center is a ZTL (Limited Traffic Zone), but public free and paid parking spaces are available about 200 meters from the holiday home.",
         "loc-train-title": "By Train",
-        "loc-train-desc": "Monopoli railway station is well served by regional and intercity trains from Bari and Lecce. The B&B is about 1.2 km from the station, a 15-minute walk or a few minutes by taxi.",
+        "loc-train-desc": "Monopoli railway station is well served by regional and intercity trains from Bari and Lecce. The holiday home is about 1.2 km from the station, a 15-minute walk or a few minutes by taxi.",
         "loc-plane-title": "By Plane",
         "loc-plane-desc": "The nearest airports are Bari Palese (BRI) at 60 km and Brindisi Papola Casale (BDS) at 70 km. Both offer connections by train, shuttle bus, or rental car to Monopoli.",
         "loc-nearby-title": "Nearby attractions",
@@ -183,6 +187,7 @@ const translations = {
     },
     fr: {
         "menu-home": "Accueil",
+        "logo-subtitle": "Maison de Vacances",
         "menu-apartment": "L'Appartement",
         "menu-gallery": "Galerie",
         "menu-location": "Emplacement",
@@ -222,9 +227,9 @@ const translations = {
         "loc-address-heading": "Adresse",
         "loc-how-title": "Comment s'y rendre",
         "loc-car-title": "En Voiture",
-        "loc-car-desc": "Depuis l'autoroute A14, sortie Bari Nord/Sud, continuez sur la SS16 en direction de Brindisi jusqu'à la sortie Monopoli. Le centre historique est une zone à trafic limité (ZTL), mais des parkings publics gratuits et payants sont disponibles à environ 200 mètres du B&B.",
+        "loc-car-desc": "Depuis l'autoroute A14, sortie Bari Nord/Sud, continuez sur la SS16 en direction de Brindisi jusqu'à la sortie Monopoli. Le centre historique est une zone à trafic limité (ZTL), mais des parkings publics gratuits et payants sont disponibles à environ 200 mètres de la maison de vacances.",
         "loc-train-title": "En Train",
-        "loc-train-desc": "La gare de Monopoli est desservie par des trains régionaux et interurbains depuis Bari et Lecce. Le B&B se trouve à environ 1,2 km de la gare, soit 15 minutes à pied ou quelques minutes en taxi.",
+        "loc-train-desc": "La gare de Monopoli est desservie par des trains régionaux et interurbains depuis Bari et Lecce. La maison de vacances se trouve à environ 1,2 km de la gare, soit 15 minutes à pied ou quelques minutes en taxi.",
         "loc-plane-title": "En Avion",
         "loc-plane-desc": "Les aéroports les plus proches sont Bari Palese (BRI) à 60 km et Brindisi Papola Casale (BDS) à 70 km. Tous deux proposent des liaisons en train, navette ou voiture de location vers Monopoli.",
         "loc-nearby-title": "À proximité",
@@ -263,6 +268,7 @@ const translations = {
     },
     es: {
         "menu-home": "Inicio",
+        "logo-subtitle": "Casa de Vacaciones",
         "menu-apartment": "El Apartamento",
         "menu-gallery": "Galería",
         "menu-location": "Ubicación",
@@ -302,9 +308,9 @@ const translations = {
         "loc-address-heading": "Dirección",
         "loc-how-title": "Cómo llegar",
         "loc-car-title": "En Coche",
-        "loc-car-desc": "Desde la autopista A14, salida Bari Nord/Sud, continuar por la SS16 en dirección Brindisi hasta la salida Monopoli. El centro histórico es una Zona de Tráfico Limitado (ZTL), pero hay aparcamientos públicos gratuitos y de pago a unos 200 metros del B&B.",
+        "loc-car-desc": "Desde la autopista A14, salida Bari Nord/Sud, continuar por la SS16 en dirección Brindisi hasta la salida Monopoli. El centro histórico es una Zona de Tráfico Limitado (ZTL), pero hay aparcamientos públicos gratuitos y de pago a unos 200 metros de la casa de vacaciones.",
         "loc-train-title": "En Tren",
-        "loc-train-desc": "La estación de tren de Monopoli está conectada con trenes regionales e interurbanos desde Bari y Lecce. El B&B está a 1,2 km de la estación, unos 15 minutos a pie o unos minutos en taxi.",
+        "loc-train-desc": "La estación de tren de Monopoli está conectada con trenes regionales e interurbanos desde Bari y Lecce. La casa de vacaciones está a 1,2 km de la estación, unos 15 minutos a pie o unos minutos en taxi.",
         "loc-plane-title": "En Avión",
         "loc-plane-desc": "Los aeropuertos más cercanos son Bari Palese (BRI) a 60 km y Brindisi Papola Casale (BDS) a 70 km. Ambos ofrecen conexiones en tren, autobús de enlace o coche de alquiler a Monopoli.",
         "loc-nearby-title": "En las cercanías",
@@ -344,6 +350,7 @@ const translations = {
 
     de: {
         "menu-home": "Startseite",
+        "logo-subtitle": "Ferienwohnung",
         "menu-apartment": "Das Apartment",
         "menu-gallery": "Galerie",
         "menu-location": "Lage",
@@ -383,9 +390,9 @@ const translations = {
         "loc-address-heading": "Adresse",
         "loc-how-title": "Anreise",
         "loc-car-title": "Mit dem Auto",
-        "loc-car-desc": "Nehmen Sie auf der Autobahn A14 die Ausfahrt Bari Nord/Sud und fahren Sie auf der SS16 in Richtung Brindisi bis zur Ausfahrt Monopoli. Das historische Zentrum ist eine verkehrsberuhigte Zone (ZTL), aber es gibt bequeme kostenlose und kostenpflichtige Parkplätze ca. 200 Meter vom B&B entfernt.",
+        "loc-car-desc": "Nehmen Sie auf der Autobahn A14 die Ausfahrt Bari Nord/Sud und fahren Sie auf der SS16 in Richtung Brindisi bis zur Ausfahrt Monopoli. Das historische Zentrum ist eine verkehrsberuhigte Zone (ZTL), aber es gibt bequeme kostenlose und kostenpflichtige Parkplätze ca. 200 Meter von der Ferienwohnung entfernt.",
         "loc-train-title": "Mit dem Zug",
-        "loc-train-desc": "Der Bahnhof von Monopoli wird von Regional- und Intercity-Zügen aus Bari und Lecce angefahren. Das B&B ist ca. 1,2 km vom Bahnhof entfernt, was in 15 Gehminuten oder in wenigen Minuten mit dem Taxi zu erreichen ist.",
+        "loc-train-desc": "Der Bahnhof von Monopoli wird von Regional- und Intercity-Zügen aus Bari und Lecce angefahren. Die Ferienwohnung ist ca. 1,2 km vom Bahnhof entfernt, was in 15 Gehminuten oder in wenigen Minuten mit dem Taxi zu erreichen ist.",
         "loc-plane-title": "Mit dem Flugzeug",
         "loc-plane-desc": "Die nächstgelegenen Flughäfen sind Bari Palese (BRI) in ca. 60 km und Brindisi Papola Casale (BDS) in ca. 70 km Entfernung. Beide bieten Zugverbindungen, Shuttlebusse oder Mietwagen nach Monopoli.",
         "loc-nearby-title": "In der Umgebung",
@@ -756,7 +763,7 @@ if (bookingForm) {
         .then(response => response.json())
         .then(data => {
             // ── LINK WHATSAPP DI RISERVA ───────────────────────────────────────
-            const waText = `Ciao Riccardo! Mi chiamo ${name} e vorrei richiedere un preventivo per il B&B Il Gabbiano.\n\n` +
+            const waText = `Ciao Riccardo! Mi chiamo ${name} e vorrei richiedere un preventivo per il Casa Vacanze Il Gabbiano.\n\n` +
                            `✅ Check-in: ${checkinStr}\n` +
                            `✅ Check-out: ${checkoutStr}\n` +
                            `👤 Ospiti: ${guests}\n` +
@@ -821,15 +828,31 @@ document.addEventListener('DOMContentLoaded', () => {
     initGalleryTabs();
     renderGallery('all');
     
-    // Set dates default min limits in form to current date
+    // Set dates default min limits in form (must be strictly greater than current date)
     const checkinInput = document.getElementById('form-checkin');
     const checkoutInput = document.getElementById('form-checkout');
     if (checkinInput && checkoutInput) {
-        const today = new Date().toISOString().split('T')[0];
-        checkinInput.min = today;
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const tomorrowStr = tomorrow.toISOString().split('T')[0];
+        
+        checkinInput.min = tomorrowStr;
+        checkoutInput.min = tomorrowStr;
         
         checkinInput.addEventListener('change', () => {
-            checkoutInput.min = checkinInput.value;
+            if (checkinInput.value) {
+                const checkinDate = new Date(checkinInput.value);
+                const nextDay = new Date(checkinDate);
+                nextDay.setDate(nextDay.getDate() + 1);
+                checkoutInput.min = nextDay.toISOString().split('T')[0];
+                
+                // If current checkout is <= new checkin, reset it to next day
+                if (checkoutInput.value && new Date(checkoutInput.value) <= checkinDate) {
+                    checkoutInput.value = nextDay.toISOString().split('T')[0];
+                }
+            } else {
+                checkoutInput.min = tomorrowStr;
+            }
         });
     }
 });
