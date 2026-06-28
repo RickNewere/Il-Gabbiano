@@ -61,7 +61,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--header-height);
+    scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px));
 }
 
 body {
@@ -191,7 +191,8 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height);
+    height: calc(var(--header-height) + env(safe-area-inset-top, 0px));
+    padding-top: env(safe-area-inset-top, 0px);
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -309,12 +310,13 @@ img {
 /* Mobile Navigation */
 .mobile-nav {
     position: fixed;
-    top: var(--header-height);
+    top: calc(var(--header-height) + env(safe-area-inset-top, 0px));
     left: 0;
     width: 100%;
     background-color: var(--white);
     border-bottom: 1px solid var(--divider);
     padding: 24px;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -322,6 +324,7 @@ img {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
     box-shadow: var(--shadow-md);
+    -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav.open {
@@ -1117,7 +1120,7 @@ img {
     border: 1px solid rgba(15, 53, 92, 0.15);
     border-radius: var(--radius-sm);
     font-family: var(--font-sans);
-    font-size: 15px;
+    font-size: 16px; /* Optimized to prevent automatic zoom on iOS Safari */
     color: var(--text-main);
     background-color: var(--white);
     transition: var(--transition);
@@ -1174,8 +1177,8 @@ img {
 /* Floating WhatsApp Widget */
 .whatsapp-floating {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: calc(30px + env(safe-area-inset-bottom, 0px));
+    right: calc(30px + env(safe-area-inset-right, 0px));
     background-color: var(--whatsapp);
     color: var(--white);
     width: 60px;
