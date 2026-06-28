@@ -1520,8 +1520,35 @@ img {
         --header-height: 70px;
     }
     
+    .section {
+        padding: 60px 0;
+    }
+    
+    .header-container {
+        padding: 0 16px;
+    }
+    
+    .logo-title {
+        font-size: 21px;
+    }
+    
+    .lang-dropdown {
+        right: -20px;
+        min-width: 90px;
+    }
+    
+    .lang-opt {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    
     .nav-menu, .btn-nav { display: none; }
     .menu-toggle { display: block; }
+    
+    .hero {
+        height: 100dvh;
+        min-height: 560px;
+    }
     
     .hero h1 { font-size: 32px; }
     .hero p { font-size: 16px; }
@@ -1533,6 +1560,15 @@ img {
     .spec-divider { display: none; }
     
     .amenities-grid { grid-template-columns: 1fr; }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 16px;
+    }
+    
+    .contact-form-wrapper {
+        padding: 24px;
+    }
     
     .form-row { grid-template-columns: 1fr; gap: 0; }
     .form-group { margin-bottom: 12px; }
