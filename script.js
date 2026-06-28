@@ -854,4 +854,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Cinematic Intro Screen Handler
+    const introScreen = document.getElementById('intro-screen');
+    if (introScreen) {
+        document.body.classList.add('intro-open');
+        
+        // Show second slide after 4.0s
+        const slide2 = document.querySelector('.intro-slide-2');
+        const slide2Timeout = setTimeout(() => {
+            if (slide2) slide2.classList.add('active');
+        }, 4000);
+
+        const dismissIntro = () => {
+            clearTimeout(slide2Timeout);
+            introScreen.classList.add('intro-hiding');
+            document.body.classList.remove('intro-open');
+            setTimeout(() => {
+                introScreen.remove();
+            }, 900);
+        };
+
+        // Auto-dismiss after progress animation ends (approx 8.8s)
+        const autoDismissTimeout = setTimeout(dismissIntro, 8800);
+
+        introScreen.addEventListener('click', () => {
+            clearTimeout(autoDismissTimeout);
+            dismissIntro();
+        });
+    }
 });

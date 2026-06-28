@@ -33,9 +33,51 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
+
+    <!-- ══════════════════════════════════════════════
+         INTRO SCREEN — Cinematic Monopoli Opening
+         ══════════════════════════════════════════════ -->
+    <div id="intro-screen" aria-hidden="true">
+        <!-- Background slides with Ken Burns -->
+        <div class="intro-slides">
+            <div class="intro-slide intro-slide-1"></div>
+            <div class="intro-slide intro-slide-2"></div>
+        </div>
+
+        <!-- Multi-layer dark overlay for cinematic look -->
+        <div class="intro-overlay"></div>
+
+        <!-- Animated shimmer lines -->
+        <div class="intro-shimmer intro-shimmer-1"></div>
+        <div class="intro-shimmer intro-shimmer-2"></div>
+
+        <!-- Main Text Content -->
+        <div class="intro-content">
+            <div class="intro-eyebrow">
+                <span class="intro-eyebrow-line"></span>
+                <span class="intro-eyebrow-text">Puglia &middot; Italia</span>
+                <span class="intro-eyebrow-line"></span>
+            </div>
+            <h2 class="intro-title">Monopoli</h2>
+            <p class="intro-subtitle">Un angolo di paradiso nel cuore del Mediterraneo</p>
+            <div class="intro-separator"></div>
+            <div class="intro-logo-box">
+                <span class="intro-logo-name">Il Gabbiano</span>
+                <span class="intro-logo-tag">Casa Vacanze</span>
+            </div>
+        </div>
+
+        <!-- Bottom progress bar + CTA -->
+        <div class="intro-bottom">
+            <span class="intro-cta-text">Tocca per continuare</span>
+            <div class="intro-progress">
+                <div class="intro-progress-fill" id="intro-progress-fill"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Header Navigation -->
     <header class="header">
@@ -139,7 +181,7 @@
                     <i data-lucide="maximize"></i>
                     <div>
                         <h4 data-i18n="spec-size-title">Superficie</h4>
-                        <p>65 m²</p>
+                        <p>55 m²</p>
                     </div>
                 </div>
                 <div class="spec-divider"></div>
@@ -545,7 +587,7 @@
     </div>
 
     <!-- Script File -->
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>
 
