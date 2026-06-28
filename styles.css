@@ -602,7 +602,7 @@ img {
     min-width: 200px;
 }
 
-.spec-item i {
+.spec-item i, .spec-item svg {
     width: 48px;
     height: 48px;
     border-radius: 12px;
@@ -698,6 +698,11 @@ img {
     transition: var(--transition);
 }
 
+.slider-btn i, .slider-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 .slider-btn:hover {
     background-color: var(--white);
     transform: translateY(-50%) scale(1.1);
@@ -774,7 +779,7 @@ img {
     color: var(--primary);
 }
 
-.amenity-item-card i {
+.amenity-item-card i, .amenity-item-card svg {
     width: 20px;
     height: 20px;
     color: var(--accent);
@@ -935,7 +940,7 @@ img {
     margin-bottom: 6px;
 }
 
-.transport-header i {
+.transport-header i, .transport-header svg {
     color: var(--accent);
     width: 20px;
     height: 20px;
@@ -1038,6 +1043,11 @@ img {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+
+.info-card-icon i, .info-card-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .info-card-body h3 {
@@ -1269,7 +1279,7 @@ img {
     z-index: 10;
 }
 
-.lightbox-close i { width: 32px; height: 32px; }
+.lightbox-close i, .lightbox-close svg { width: 32px; height: 32px; }
 
 .lightbox-nav {
     position: absolute;
@@ -1287,6 +1297,11 @@ img {
     justify-content: center;
     transition: var(--transition);
     z-index: 10;
+}
+
+.lightbox-nav i, .lightbox-nav svg {
+    width: 24px;
+    height: 24px;
 }
 
 .lightbox-nav:hover {
@@ -1423,6 +1438,11 @@ img {
     justify-content: center;
     color: var(--white);
     transition: var(--transition);
+}
+
+.footer-socials a i, .footer-socials a svg {
+    width: 18px;
+    height: 18px;
 }
 
 .footer-socials a:hover {
