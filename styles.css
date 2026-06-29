@@ -1941,7 +1941,7 @@ body.intro-open { overflow: hidden; }
     background-color: var(--faint);
     position: relative;
     overflow: hidden;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .reviews-content {
