@@ -1091,17 +1091,20 @@ img {
 .contact-info-cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    height: 100%;
 }
 
 .info-card {
     display: flex;
+    align-items: center;
     gap: 20px;
     background-color: var(--white);
-    padding: 24px;
+    padding: 18px 24px;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--divider);
+    flex: 1;
 }
 
 .info-card-icon {
@@ -1920,12 +1923,14 @@ body.intro-open { overflow: hidden; }
 
 /* WhatsApp card matching style */
 .info-card-wa-style {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .info-card-wa-style:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.12);
-    border-color: rgba(37, 211, 102, 0.35);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.15);
+    border-color: rgba(37, 211, 102, 0.5) !important;
 }
