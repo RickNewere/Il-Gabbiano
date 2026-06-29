@@ -107,10 +107,10 @@ const translations = {
         "reviews-score-desc": "Valutazione media basata su 26 recensioni",
         "reviews-airbnb-badge": "Ospite eccezionale su Airbnb",
         "btn-view-all-reviews": "Leggi tutte le recensioni su Airbnb",
-        "review-text-1": "Soggiorno perfetto! L'appartamento di Dora e Riccardo è una bomboniera nel pieno centro storico, pulitissimo e dotato di ogni comfort. Svegliarsi e fare colazione vedendo le case tipiche è impagabile. Dora e Riccardo sono stati host eccezionali, super accoglienti e disponibili!",
-        "review-text-2": "Un vero gioiello a Monopoli. La posizione è perfetta, a pochi passi dalla spiaggia della città e da fantastici ristoranti. L'appartamento di Dora e Riccardo era immacolato, moderno ma ricco di fascino storico. Accoglienza superba!",
-        "review-text-3": "Splendido soggiorno da Dora e Riccardo. L'appartamento è arredato con molto gusto, pulitissimo e situato in posizione ideale nella città vecchia. I loro consigli per parcheggio e ristoranti sono stati fantastici!",
-        "review-text-4": "L'appartamento è bellissimo, proprio come nelle foto, pulitissimo e con tutto il necessario. La posizione è imbattibile per esplorare Monopoli a piedi. Dora e Riccardo sono sempre attenti e premurosi. Consigliatissimo al 100%!" 
+        "review-text-1": "Soggiorno perfetto! L'appartamento di Dora è una bomboniera nel pieno centro storico, pulitissimo e dotato di ogni comfort. Svegliarsi e fare colazione vedendo le case tipiche è impagabile. Dora è gentilissima e super disponibile!",
+        "review-text-2": "Un vero gioiello a Monopoli. La posizione è perfetta, a pochi passi dalla spiaggia della città e da fantastici ristoranti. L'appartamento di Dora era immacolato, moderno ma ricco di fascino storico. Dora è stata un host eccezionale.",
+        "review-text-3": "Splendido soggiorno da Dora. L'appartamento è arredato con molto gusto, pulitissimo e situato in posizione ideale nella città vecchia. I consigli di Dora per parcheggio e ristoranti sono stati perfetti!",
+        "review-text-4": "L'appartamento è bellissimo, proprio come nelle foto, pulitissimo e con tutto il necessario. La posizione è imbattibile per esplorare Monopoli a piedi. Dora è stata sempre attenta e gentile. Consigliatissimo al 100%!" 
     },
     en: {
         "menu-home": "Home",
@@ -199,10 +199,10 @@ const translations = {
         "reviews-score-desc": "Average rating based on 26 reviews",
         "reviews-airbnb-badge": "Exceptional Host on Airbnb",
         "btn-view-all-reviews": "Read all reviews on Airbnb",
-        "review-text-1": "Perfect stay! Dora and Riccardo's apartment is a gem in the heart of the historic center, spotless and equipped with every comfort. Waking up and having breakfast looking at the typical houses is priceless. They are outstanding hosts!",
-        "review-text-2": "An absolute gem of a place in Monopoli. The location is perfect, just a short walk to the town beach and amazing restaurants. The apartment was spotless, modern yet full of historic charm. Dora and Riccardo were brilliant hosts.",
-        "review-text-3": "Wonderful stay at Dora and Riccardo's. The apartment is very tastefully decorated, clean and ideally located in the old town. Their advice for parking and restaurants was perfect!",
-        "review-text-4": "The apartment is beautiful, just like in the photos, clean and with everything you need. The location is unbeatable to explore Monopoli on foot. Dora and Riccardo were always attentive and kind. 100% recommended!" 
+        "review-text-1": "Perfect stay! The apartment is a gem in the heart of the historic center, spotless and equipped with every comfort. Waking up and having breakfast looking at the typical houses is priceless. Dora is very kind and super helpful!",
+        "review-text-2": "An absolute gem of a place in Monopoli. The location is perfect, just a short walk to the town beach and amazing restaurants. The apartment was spotless, modern yet full of historic charm. Dora was a brilliant host.",
+        "review-text-3": "Wonderful stay at Dora's. The apartment is very tastefully decorated, clean and ideally located in the old town. Dora's advice for parking and restaurants was perfect!",
+        "review-text-4": "The apartment is beautiful, just like in the photos, clean and with everything you need. The location is unbeatable to explore Monopoli on foot. Dora was always attentive and kind. 100% recommended!" 
     },
     fr: {
         "menu-home": "Accueil",
@@ -290,10 +290,10 @@ const translations = {
         "reviews-score-desc": "Note moyenne basée sur 26 avis",
         "reviews-airbnb-badge": "Hôte exceptionnel sur Airbnb",
         "btn-view-all-reviews": "Lire tous les avis sur Airbnb",
-        "review-text-1": "Séjour parfait ! L'appartement de Dora et Riccardo est un petit bijou au cœur du centre historique, très propre et équipé de tout le confort. Se réveiller et prendre son petit-déjeuner en regardant les maisons typiques est inestimable. Ils sont très gentils et super serviables !",
-        "review-text-2": "Un véritable bijou à Monopoli. L'emplacement est parfait, à quelques pas de la plage de la ville et de superbes restaurants. L'appartement de Dora et Riccardo était impeccable, moderne mais plein de charme historique. Hôtes exceptionnels.",
-        "review-text-3": "Superbe séjour chez Dora et Riccardo. L'appartement est décoré avec beaucoup de goût, très propre et idéalement situé dans la vieille ville. Leurs conseils pour se garer et manger étaient parfaits!",
-        "review-text-4": "L'appartement est magnifique, tout à fait comme sur les photos, propre et avec tout ce dont vous avez besoin. L'emplacement est imbattable pour explorer Monopoli à pied. Dora et Riccardo ont toujours été attentionnés et gentils. Recommandé à 100% !" 
+        "review-text-1": "Séjour parfait ! L'appartement est un petit bijou au cœur du centre historique, très propre et équipé de tout le confort. Se réveiller et prendre son petit-déjeuner en regardant les maisons typiques est inestimable. Dora est très gentille et super serviable !",
+        "review-text-2": "Un véritable bijou à Monopoli. L'emplacement est parfait, à quelques pas de la plage de la ville et de superbes restaurants. L'appartement était impeccable, moderne mais plein de charme historique. Dora était un hôte exceptionnel.",
+        "review-text-3": "Superbe séjour chez Dora. L'appartement est décoré avec beaucoup de goût, très propre et idéalement situé dans la vieille ville. Les conseils de Dora pour se garer et manger étaient parfaits!",
+        "review-text-4": "L'appartement est magnifique, tout à fait comme sur les photos, propre et avec tout ce dont vous avez besoin. L'emplacement est imbattable pour explorer Monopoli à pied. Dora a toujours été attentionnée et gentille. Recommandé à 100% !" 
     },
     es: {
         "menu-home": "Inicio",
@@ -381,10 +381,10 @@ const translations = {
         "reviews-score-desc": "Calificación promedio basada en 26 reseñas",
         "reviews-airbnb-badge": "Anfitrión excepcional en Airbnb",
         "btn-view-all-reviews": "Leer todas las reseñas en Airbnb",
-        "review-text-1": "¡Estancia perfecta! El apartamento de Dora y Riccardo es una joya en pleno centro histórico, impecable y equipado con todas las comodidades. Despertarse y desayunar viendo las casas típicas no tiene precio. ¡Dora y Riccardo son muy amables y súper atentos!",
-        "review-text-2": "Una verdadera joya en Monopoli. La ubicación es perfecta, a pocos pasos de la playa de la ciudad y de fantásticos restaurantes. El apartamento de Dora y Riccardo estaba impecable, moderno pero lleno de encanto histórico. Excelentes anfitriones.",
-        "review-text-3": "Magnífica estancia con Dora y Riccardo. El apartamento está decorado con mucho gusto, muy limpio e idealmente situado en el casco antiguo. ¡Sus consejos para aparcar y comer fueron perfectos!",
-        "review-text-4": "El apartamento es precioso, tal cual las fotos, limpísimo y con todo lo necesario. La ubicación es inmejorable para explorar Monopoli a pie. Dora y Riccardo estuvieron siempre atentos y amables. ¡Recomendado 100%!" 
+        "review-text-1": "¡Estancia perfecta! El apartamento de Dora es una joya en pleno centro histórico, impecable y equipado con todas las comodidades. Despertarse y desayunar viendo las casas típicas no tiene precio. ¡Dora es muy amable y súper atenta!",
+        "review-text-2": "Una verdadera joya en Monopoli. La ubicación es perfecta, a pocos pasos de la playa de la ciudad y de fantásticos restaurantes. El apartamento estaba impecable, moderno pero lleno de encanto histórico. Dora fue un anfitrión brillante.",
+        "review-text-3": "Magnífica estancia en casa de Dora. El apartamento está decorado con mucho gusto, muy limpio e idealmente situado en el casco antiguo. ¡Los consejos de Dora para aparcar y comer fueron perfectos!",
+        "review-text-4": "El apartamento es precioso, tal cual las fotos, limpísimo y con todo lo necesario. La ubicación es inmejorable para explorar Monopoli a pie. Dora estuvo siempre atenta y amable. ¡Recomendado 100%!" 
     },
 
     de: {
@@ -473,9 +473,9 @@ const translations = {
         "reviews-score-desc": "Durchschnittliche Bewertung basierend auf 26 Bewertungen",
         "reviews-airbnb-badge": "Außergewöhnlicher Gastgeber auf Airbnb",
         "btn-view-all-reviews": "Alle Bewertungen auf Airbnb lesen",
-        "review-text-1": "Perfekter Aufenthalt! Die Wohnung von Dora und Riccardo ist ein Schmuckstück im Herzen der Altstadt, blitzsauber und mit allem Komfort ausgestattet. Aufzuwachen und mit Blick auf die typischen Häuser zu frühstücken ist unbezahlbar. Dora und Riccardo sind sehr nett und super hilfsbereit!",
-        "review-text-2": "Ein absolutes Juwel in Monopoli. Die Lage ist perfekt, nur einen kurzen Spaziergang vom Stadtstrand und fantastischen Restaurants entfernt. Die Wohnung von Dora und Riccardo war makellos sauber, modern und dennoch voller historischem Charme. Tolle Gastgeber!",
-        "review-text-3": "Wunderschöner Aufenthalt bei Dora und Riccardo. Das Apartment ist sehr geschmackvoll eingerichtet, super sauber und perfekt in der Altstadt gelegen. Ihre Tipps zum Parken und Essen waren perfekt!",
+        "review-text-1": "Perfekter Aufenthalt! Die Wohnung von Dora ist ein Schmuckstück im Herzen der Altstadt, blitzsauber und mit allem Komfort ausgestattet. Aufzuwachen und mit Blick auf die typischen Häuser zu frühstücken ist unbezahlbar. Dora ist sehr nett und super hilfsbereit!",
+        "review-text-2": "Ein absolutes Juwel in Monopoli. Die Lage ist perfekt, nur einen kurzen Spaziergang vom Stadtstrand und fantastischen Restaurants entfernt. Die Wohnung war makellos sauber, modern und dennoch voller historischem Charme. Dora war ein toller Gastgeber.",
+        "review-text-3": "Wunderschöner Aufenthalt bei Dora. Das Apartment ist sehr geschmackvoll eingerichtet, super sauber und perfekt in der Altstadt gelegen. Doras Tipps zum Parken und Essen waren perfekt!",
         "review-text-4": "Die Wohnung ist wunderschön, genau wie auf den Fotos, sehr sauber und mit allem, was man braucht. Die Lage ist unschlagbar, um Monopoli zu Fuß zu erkunden. Riccardo war immer aufmerksam und freundlich. 100% empfehlenswert!" 
     }
 };
