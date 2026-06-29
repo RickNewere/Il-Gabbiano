@@ -870,8 +870,10 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout(slide2Timeout);
             introScreen.classList.add('intro-hiding');
             document.body.classList.remove('intro-open');
+            window.scrollTo({ top: 0, behavior: 'instant' });
             setTimeout(() => {
                 introScreen.remove();
+                window.scrollTo({ top: 0, behavior: 'instant' });
             }, 900);
         };
 
