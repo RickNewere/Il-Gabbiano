@@ -1444,14 +1444,15 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 6px;
     color: var(--accent-light);
 }
 
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 }
 
 .footer-links a {
