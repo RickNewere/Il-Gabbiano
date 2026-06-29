@@ -35,7 +35,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 
@@ -320,7 +320,7 @@
                     <div class="reviews-badge-card">
                         <!-- SVG Laurel Wreath rating representation -->
                         <div class="laurel-wreath-container">
-                            <svg class="laurel-wreath-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="laurel-wreath-svg" viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Gradients -->
                                 <defs>
                                     <linearGradient id="laurel-gold" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -331,32 +331,32 @@
                                     </linearGradient>
                                 </defs>
                                 
-                                <!-- Left Branch -->
-                                <g transform="translate(100, 100) scale(-1, 1) translate(-100, -100)">
+                                <!-- Left Branch (Closer to center text) -->
+                                <g transform="translate(10, 0)">
                                     <!-- Stem -->
-                                    <path d="M 60,150 C 35,120 35,80 60,50" fill="none" stroke="url(#laurel-gold)" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M 55,90 C 35,70 35,45 55,25" fill="none" stroke="url(#laurel-gold)" stroke-width="3" stroke-linecap="round"/>
                                     <!-- Leaves -->
-                                    <path d="M 60,150 Q 40,155 45,140 Q 55,140 60,150 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 45,130 Q 25,130 35,115 Q 50,120 45,130 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 37,105 Q 17,100 30,85 Q 43,95 37,105 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 42,80 Q 25,70 38,58 Q 50,70 42,80 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 60,50 Q 50,30 60,35 Q 65,45 60,50 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 55,90 Q 38,92 42,80 Q 50,80 55,90 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 43,77 Q 27,75 35,63 Q 47,67 43,77 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 37,60 Q 20,55 30,43 Q 41,50 37,60 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 40,43 Q 25,33 36,23 Q 46,33 40,43 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 55,25 Q 47,10 55,14 Q 59,20 55,25 Z" fill="url(#laurel-gold)"/>
                                 </g>
                                 
-                                <!-- Right Branch -->
-                                <g>
+                                <!-- Right Branch (Closer to center text) -->
+                                <g transform="translate(140, 0)">
                                     <!-- Stem -->
-                                    <path d="M 340,150 C 365,120 365,80 340,50" fill="none" stroke="url(#laurel-gold)" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M 55,90 C 75,70 75,45 55,25" fill="none" stroke="url(#laurel-gold)" stroke-width="3" stroke-linecap="round"/>
                                     <!-- Leaves -->
-                                    <path d="M 340,150 Q 360,155 355,140 Q 345,140 340,150 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 355,130 Q 375,130 365,115 Q 350,120 355,130 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 363,105 Q 383,100 370,85 Q 357,95 363,105 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 358,80 Q 375,70 362,58 Q 350,70 358,80 Z" fill="url(#laurel-gold)"/>
-                                    <path d="M 340,50 Q 350,30 340,35 Q 335,45 340,50 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 55,90 Q 72,92 68,80 Q 60,80 55,90 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 67,77 Q 83,75 75,63 Q 63,67 67,77 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 73,60 Q 90,55 80,43 Q 69,50 73,60 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 70,43 Q 85,33 74,23 Q 64,33 70,43 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 55,25 Q 63,10 55,14 Q 51,20 55,25 Z" fill="url(#laurel-gold)"/>
                                 </g>
                                 
                                 <!-- Text in the Center -->
-                                <text x="200" y="125" text-anchor="middle" font-family="'Inter', sans-serif" font-size="80" font-weight="800" fill="#222" letter-spacing="-1">4,96</text>
+                                <text x="125" y="70" text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" font-size="44" font-weight="800" fill="#222" letter-spacing="-1">4,96</text>
                             </svg>
                         </div>
                         
@@ -366,8 +366,10 @@
                             </div>
                             <h3 data-i18n="reviews-score-desc">Valutazione media basata su 26 recensioni</h3>
                             <div class="airbnb-pill">
-                                <img src="https://a0.muscache.com/airbnb/static/logotype_noscript.png" alt="Airbnb" class="airbnb-mini-logo">
-                                <span data-i18n="reviews-airbnb-badge">Ospite eccezionale su Airbnb</span>
+                                <svg class="airbnb-mini-logo-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="fill: #ff5a5f; width: 16px; height: 16px; margin-right: 4px; display: inline-block; vertical-align: middle;">
+                                    <path d="M16 2.5C11.5 2.5 7.5 6 6.3 10.3c-.6 2.2-.6 4.6.1 6.7 1.3 3.9 4 7.2 7.7 9.8L16 28.5l1.9-1.7c3.7-2.6 6.4-5.9 7.7-9.8.7-2.1.7-4.5.1-6.7C24.5 6 20.5 2.5 16 2.5zm0 13c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" />
+                                </svg>
+                                <span data-i18n="reviews-airbnb-badge" style="vertical-align: middle;">Ospite eccezionale su Airbnb</span>
                             </div>
                         </div>
                     </div>
@@ -430,8 +432,10 @@
                     <!-- Call to Action: view all on Airbnb -->
                     <div class="reviews-cta">
                         <a href="https://www.airbnb.it/rooms/1317966183520064227" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-airbnb-reviews">
-                            <img src="https://a0.muscache.com/airbnb/static/logotype_noscript.png" alt="" class="airbnb-mini-logo-white">
-                            <span data-i18n="btn-view-all-reviews">Leggi tutte le recensioni su Airbnb</span>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff; width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 6px;">
+                                <path d="M16 2.5C11.5 2.5 7.5 6 6.3 10.3c-.6 2.2-.6 4.6.1 6.7 1.3 3.9 4 7.2 7.7 9.8L16 28.5l1.9-1.7c3.7-2.6 6.4-5.9 7.7-9.8.7-2.1.7-4.5.1-6.7C24.5 6 20.5 2.5 16 2.5zm0 13c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" />
+                            </svg>
+                            <span data-i18n="btn-view-all-reviews" style="vertical-align: middle;">Leggi tutte le recensioni su Airbnb</span>
                         </a>
                     </div>
                 </div>
@@ -730,7 +734,7 @@
     </div>
 
     <!-- Script File -->
-    <script src="script.js?v=16"></script>
+    <script src="script.js?v=17"></script>
 </body>
 </html>
 
