@@ -415,6 +415,12 @@ img {
     margin: 0 auto 60px auto;
 }
 
+@media (min-width: 992px) {
+    .section-header {
+        max-width: 950px;
+    }
+}
+
 .section-title {
     font-size: 38px;
     color: var(--primary);
@@ -1910,4 +1916,16 @@ body.intro-open { overflow: hidden; }
 
     .intro-shimmer-1 { top: 10%; }
     .intro-shimmer-2 { bottom: 20%; }
+}
+
+/* WhatsApp card matching style */
+.info-card-wa-style {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.info-card-wa-style:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.12);
+    border-color: rgba(37, 211, 102, 0.35);
 }
