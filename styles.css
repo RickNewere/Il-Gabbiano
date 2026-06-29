@@ -1935,3 +1935,213 @@ body.intro-open { overflow: hidden; }
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.15);
     border-color: rgba(37, 211, 102, 0.5) !important;
 }
+
+/* ── Reviews Section ────────────────────────────────────── */
+.section-reviews {
+    background-color: var(--faint);
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Badge Card styling */
+.reviews-badge-card {
+    background-color: var(--white);
+    padding: 36px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--divider);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    max-width: 760px;
+    margin: 0 auto 50px auto;
+    transition: transform 0.3s ease;
+}
+
+.reviews-badge-card:hover {
+    transform: translateY(-2px);
+}
+
+.laurel-wreath-container {
+    width: 190px;
+    height: 105px;
+    flex-shrink: 0;
+}
+
+.laurel-wreath-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.reviews-badge-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.stars-display {
+    color: #ffb300;
+    font-size: 22px;
+    display: flex;
+    gap: 3px;
+}
+
+.reviews-badge-info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+    font-family: var(--font-sans);
+}
+
+.airbnb-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 90, 95, 0.08);
+    border: 1px solid rgba(255, 90, 95, 0.16);
+    padding: 6px 16px;
+    border-radius: 50px;
+    color: #ff5a5f;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.airbnb-mini-logo {
+    height: 13px;
+    object-fit: contain;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.review-card {
+    background-color: var(--white);
+    padding: 28px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--divider);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.review-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.guest-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.guest-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.guest-info h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 2px 0;
+    font-family: var(--font-sans);
+}
+
+.review-date {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.review-rating {
+    color: #ffb300;
+    font-size: 13px;
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.review-text {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Reviews CTA */
+.reviews-cta {
+    text-align: center;
+}
+
+.btn-airbnb-reviews {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    color: var(--white) !important;
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.btn-airbnb-reviews:hover {
+    background-color: #e04f54;
+    border-color: #e04f54;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 90, 95, 0.25);
+}
+
+.airbnb-mini-logo-white {
+    height: 15px;
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+    .reviews-badge-card {
+        flex-direction: column;
+        padding: 30px 24px;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .reviews-badge-info {
+        align-items: center;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}

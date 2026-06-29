@@ -35,7 +35,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 
@@ -96,6 +96,7 @@
                 <a href="#home" class="nav-link active" data-i18n="menu-home">Home</a>
                 <a href="#apartment" class="nav-link" data-i18n="menu-apartment">L'Appartamento</a>
                 <a href="#gallery" class="nav-link" data-i18n="menu-gallery">Galleria</a>
+                <a href="#reviews" class="nav-link" data-i18n="menu-reviews">Recensioni</a>
                 <a href="#location" class="nav-link" data-i18n="menu-location">Dove Siamo</a>
                 <a href="#contact" class="nav-link" data-i18n="menu-contact">Contatti</a>
             </nav>
@@ -302,6 +303,137 @@
                 <!-- Photo Grid -->
                 <div class="gallery-grid" id="gallery-grid">
                     <!-- Photo items will be injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section section-reviews">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="reviews-title">Cosa dicono i nostri ospiti</h2>
+                    <p class="section-subtitle" data-i18n="reviews-subtitle">Valutazioni ed esperienze verificate tratte direttamente da Airbnb</p>
+                </div>
+                
+                <div class="reviews-content">
+                    <!-- Average Rating Badge Card -->
+                    <div class="reviews-badge-card">
+                        <!-- SVG Laurel Wreath rating representation -->
+                        <div class="laurel-wreath-container">
+                            <svg class="laurel-wreath-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Gradients -->
+                                <defs>
+                                    <linearGradient id="laurel-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFE082" />
+                                        <stop offset="30%" stop-color="#FFD54F" />
+                                        <stop offset="70%" stop-color="#FFB300" />
+                                        <stop offset="100%" stop-color="#FF8F00" />
+                                    </linearGradient>
+                                </defs>
+                                
+                                <!-- Left Branch -->
+                                <g transform="translate(100, 100) scale(-1, 1) translate(-100, -100)">
+                                    <!-- Stem -->
+                                    <path d="M 60,150 C 35,120 35,80 60,50" fill="none" stroke="url(#laurel-gold)" stroke-width="4" stroke-linecap="round"/>
+                                    <!-- Leaves -->
+                                    <path d="M 60,150 Q 40,155 45,140 Q 55,140 60,150 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 45,130 Q 25,130 35,115 Q 50,120 45,130 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 37,105 Q 17,100 30,85 Q 43,95 37,105 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 42,80 Q 25,70 38,58 Q 50,70 42,80 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 60,50 Q 50,30 60,35 Q 65,45 60,50 Z" fill="url(#laurel-gold)"/>
+                                </g>
+                                
+                                <!-- Right Branch -->
+                                <g>
+                                    <!-- Stem -->
+                                    <path d="M 340,150 C 365,120 365,80 340,50" fill="none" stroke="url(#laurel-gold)" stroke-width="4" stroke-linecap="round"/>
+                                    <!-- Leaves -->
+                                    <path d="M 340,150 Q 360,155 355,140 Q 345,140 340,150 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 355,130 Q 375,130 365,115 Q 350,120 355,130 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 363,105 Q 383,100 370,85 Q 357,95 363,105 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 358,80 Q 375,70 362,58 Q 350,70 358,80 Z" fill="url(#laurel-gold)"/>
+                                    <path d="M 340,50 Q 350,30 340,35 Q 335,45 340,50 Z" fill="url(#laurel-gold)"/>
+                                </g>
+                                
+                                <!-- Text in the Center -->
+                                <text x="200" y="125" text-anchor="middle" font-family="'Inter', sans-serif" font-size="80" font-weight="800" fill="#222" letter-spacing="-1">4,96</text>
+                            </svg>
+                        </div>
+                        
+                        <div class="reviews-badge-info">
+                            <div class="stars-display">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <h3 data-i18n="reviews-score-desc">Valutazione media basata su 26 recensioni</h3>
+                            <div class="airbnb-pill">
+                                <img src="https://a0.muscache.com/airbnb/static/logotype_noscript.png" alt="Airbnb" class="airbnb-mini-logo">
+                                <span data-i18n="reviews-airbnb-badge">Ospite eccezionale su Airbnb</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews Grid -->
+                    <div class="reviews-grid">
+                        <!-- Review Card 1 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="guest-avatar">G</div>
+                                <div class="guest-info">
+                                    <h4>Giulia</h4>
+                                    <span class="review-date">Giugno 2026</span>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text" data-i18n="review-text-1">Soggiorno perfetto! L'appartamento è una bomboniera nel pieno centro storico, pulitissimo e dotato di ogni comfort. Svegliarsi e fare colazione vedendo le case tipiche è impagabile. Riccardo è gentilissimo e super disponibile!</p>
+                        </div>
+                        
+                        <!-- Review Card 2 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="guest-avatar">D</div>
+                                <div class="guest-info">
+                                    <h4>David</h4>
+                                    <span class="review-date">Maggio 2026</span>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text" data-i18n="review-text-2">An absolute gem of a place in Monopoli. The location is perfect, just a short walk to the town beach and amazing restaurants. The apartment was spotless, modern yet full of historic charm. Riccardo was a brilliant host.</p>
+                        </div>
+                        
+                        <!-- Review Card 3 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="guest-avatar">M</div>
+                                <div class="guest-info">
+                                    <h4>Marie</h4>
+                                    <span class="review-date">Settembre 2025</span>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text" data-i18n="review-text-3">Superbe séjour chez Riccardo. L'appartement est décoré avec beaucoup de goût, très propre et idéalement situé dans la vieille ville. Les conseils de Riccardo pour se garer et manger étaient parfaits!</p>
+                        </div>
+
+                        <!-- Review Card 4 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="guest-avatar">E</div>
+                                <div class="guest-info">
+                                    <h4>Elena</h4>
+                                    <span class="review-date">Agosto 2025</span>
+                                </div>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text" data-i18n="review-text-4">El apartamento es precioso, tal cual las fotos, limpísimo y con todo lo necesario. La ubicación es inmejorable para explorar Monopoli a pie. Riccardo estuvo siempre atento y amable. ¡Recomendado 100%!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action: view all on Airbnb -->
+                    <div class="reviews-cta">
+                        <a href="https://www.airbnb.it/rooms/1317966183520064227" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-airbnb-reviews">
+                            <img src="https://a0.muscache.com/airbnb/static/logotype_noscript.png" alt="" class="airbnb-mini-logo-white">
+                            <span data-i18n="btn-view-all-reviews">Leggi tutte le recensioni su Airbnb</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -549,6 +681,7 @@
                 <a href="#home" data-i18n="menu-home">Home</a>
                 <a href="#apartment" data-i18n="menu-apartment">L'Appartamento</a>
                 <a href="#gallery" data-i18n="menu-gallery">Galleria</a>
+                <a href="#reviews" data-i18n="menu-reviews">Recensioni</a>
                 <a href="#location" data-i18n="menu-location">Dove Siamo</a>
                 <a href="#contact" data-i18n="menu-contact">Contatti</a>
             </div>
@@ -597,7 +730,7 @@
     </div>
 
     <!-- Script File -->
-    <script src="script.js?v=15"></script>
+    <script src="script.js?v=16"></script>
 </body>
 </html>
 
