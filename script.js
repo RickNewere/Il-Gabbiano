@@ -106,11 +106,15 @@ const translations = {
         "reviews-subtitle": "Valutazioni ed esperienze verificate tratte direttamente da Airbnb",
         "reviews-score-desc": "Valutazione media basata su 26 recensioni",
         "reviews-airbnb-badge": "Ospite eccezionale su Airbnb",
-        "btn-view-all-reviews": "Leggi tutte le recensioni su Airbnb",
-        "review-text-1": "Soggiorno perfetto! L'appartamento di Dora è una bomboniera nel pieno centro storico, pulitissimo e dotato di ogni comfort. Svegliarsi e fare colazione vedendo le case tipiche è impagabile. Dora è gentilissima e super disponibile!",
-        "review-text-2": "Un vero gioiello a Monopoli. La posizione è perfetta, a pochi passi dalla spiaggia della città e da fantastici ristoranti. L'appartamento di Dora era immacolato, moderno ma ricco di fascino storico. Dora è stata un host eccezionale.",
-        "review-text-3": "Splendido soggiorno da Dora. L'appartamento è arredato con molto gusto, pulitissimo e situato in posizione ideale nella città vecchia. I consigli di Dora per parcheggio e ristoranti sono stati perfetti!",
-        "review-text-4": "L'appartamento è bellissimo, proprio come nelle foto, pulitissimo e con tutto il necessario. La posizione è imbattibile per esplorare Monopoli a piedi. Dora è stata sempre attenta e gentile. Consigliatissimo al 100%!" 
+                "btn-view-all-reviews": "Leggi tutte le recensioni su Airbnb",
+        "review-date-1": "Giugno 2024",
+        "review-date-2": "Maggio 2024",
+        "review-date-3": "Settembre 2024",
+        "review-date-4": "Ottobre 2024",
+        "review-text-1": "Soggiorno fantastico a casa di Dora! La comunicazione è stata eccellente. L'appartamento è pulitissimo, ben attrezzato e in una posizione ideale per esplorare Monopoli, Polignano e Alberobello. Consigliatissimo!",
+        "review-text-2": "Appartamento luminoso con vista sulla piazza, pulito e silenzioso pur essendo in centro. Dora ed il suo team rispondono prontamente. Accoglienza calorosa con dolci locali e frigo bar rifornito a disposizione!",
+        "review-text-3": "Alloggio incantevole nel cuore del centro storico, restaurato a nuovo e impeccabile in ogni dettaglio. Dora è stata super cordiale e ci ha aiutato moltissimo durante un temporale. Consiglio al 100%!",
+        "review-text-4": "Un colpo di fulmine! Appartamento pulitissimo e ben arredato nel centro storico, ideale per visitare la Puglia. Dora è una host premurosa che ci ha fatto assaggiare ottimi prodotti locali. Consigliatissimo!" 
     },
     en: {
         "menu-home": "Home",
@@ -198,11 +202,15 @@ const translations = {
         "reviews-subtitle": "Verified ratings and experiences taken directly from Airbnb",
         "reviews-score-desc": "Average rating based on 26 reviews",
         "reviews-airbnb-badge": "Exceptional Host on Airbnb",
-        "btn-view-all-reviews": "Read all reviews on Airbnb",
-        "review-text-1": "Perfect stay! The apartment is a gem in the heart of the historic center, spotless and equipped with every comfort. Waking up and having breakfast looking at the typical houses is priceless. Dora is very kind and super helpful!",
-        "review-text-2": "An absolute gem of a place in Monopoli. The location is perfect, just a short walk to the town beach and amazing restaurants. The apartment was spotless, modern yet full of historic charm. Dora was a brilliant host.",
-        "review-text-3": "Wonderful stay at Dora's. The apartment is very tastefully decorated, clean and ideally located in the old town. Dora's advice for parking and restaurants was perfect!",
-        "review-text-4": "The apartment is beautiful, just like in the photos, clean and with everything you need. The location is unbeatable to explore Monopoli on foot. Dora was always attentive and kind. 100% recommended!" 
+                "btn-view-all-reviews": "Read all reviews on Airbnb",
+        "review-date-1": "June 2024",
+        "review-date-2": "May 2024",
+        "review-date-3": "September 2024",
+        "review-date-4": "October 2024",
+        "review-text-1": "Fantastic stay at Dora's! Communication was excellent. The apartment is spotless, well-equipped, and in an ideal location to explore Monopoli, Polignano, and Alberobello. Highly recommended!",
+        "review-text-2": "Bright apartment overlooking the square, clean and quiet despite the central location. Dora and her team respond promptly. Warm welcome with local sweets and stocked mini-fridge available!",
+        "review-text-3": "Lovely accommodation in the heart of the historic center, newly renovated and flawless in every detail. Dora was super friendly and helped us during a storm. 100% recommended!",
+        "review-text-4": "Love at first sight! Spotless and beautifully furnished apartment in the historic center, ideal for visiting Puglia. Dora is a caring host who let us taste great local products. Highly recommended!" 
     },
     fr: {
         "menu-home": "Accueil",
@@ -289,11 +297,15 @@ const translations = {
         "reviews-subtitle": "Évaluations et expériences vérifiées tirées directement d'Airbnb",
         "reviews-score-desc": "Note moyenne basée sur 26 avis",
         "reviews-airbnb-badge": "Hôte exceptionnel sur Airbnb",
-        "btn-view-all-reviews": "Lire tous les avis sur Airbnb",
-        "review-text-1": "Séjour parfait ! L'appartement est un petit bijou au cœur du centre historique, très propre et équipé de tout le confort. Se réveiller et prendre son petit-déjeuner en regardant les maisons typiques est inestimable. Dora est très gentille et super serviable !",
-        "review-text-2": "Un véritable bijou à Monopoli. L'emplacement est parfait, à quelques pas de la plage de la ville et de superbes restaurants. L'appartement était impeccable, moderne mais plein de charme historique. Dora était un hôte exceptionnel.",
-        "review-text-3": "Superbe séjour chez Dora. L'appartement est décoré avec beaucoup de goût, très propre et idéalement situé dans la vieille ville. Les conseils de Dora pour se garer et manger étaient parfaits!",
-        "review-text-4": "L'appartement est magnifique, tout à fait comme sur les photos, propre et avec tout ce dont vous avez besoin. L'emplacement est imbattable pour explorer Monopoli à pied. Dora a toujours été attentionnée et gentille. Recommandé à 100% !" 
+                "btn-view-all-reviews": "Lire tous les avis sur Airbnb",
+        "review-date-1": "Juin 2024",
+        "review-date-2": "Mai 2024",
+        "review-date-3": "Septembre 2024",
+        "review-date-4": "Octobre 2024",
+        "review-text-1": "Séjour fantastique chez Dora ! La communication était excellente. L'appartement est impeccable, bien équipé et idéalement situé pour explorer Monopoli, Polignano et Alberobello. Hautement recommandé !",
+        "review-text-2": "Appartement lumineux avec vue sur la place, propre et calme malgré l'emplacement central. Dora et son équipe répondent rapidement. Accueil chaleureux avec des douceurs locales et mini-frigo fourni !",
+        "review-text-3": "Charmant hébergement au cœur du centre historique, rénové à neuf et impeccable dans les moindres détails. Dora a été très amicale et nous a aidés pendant une tempête. Recommandé à 100 % !",
+        "review-text-4": "Coup de foudre ! Appartement impeccable et joliment meublé dans le centre historique, idéal pour visiter la Pouille. Dora est une hôte attentionnée qui nous a fait déguster d'excellents produits locaux. Recommandé!" 
     },
     es: {
         "menu-home": "Inicio",
@@ -380,11 +392,15 @@ const translations = {
         "reviews-subtitle": "Valoraciones y experiencias verificadas tomadas directamente de Airbnb",
         "reviews-score-desc": "Calificación promedio basada en 26 reseñas",
         "reviews-airbnb-badge": "Anfitrión excepcional en Airbnb",
-        "btn-view-all-reviews": "Leer todas las reseñas en Airbnb",
-        "review-text-1": "¡Estancia perfecta! El apartamento de Dora es una joya en pleno centro histórico, impecable y equipado con todas las comodidades. Despertarse y desayunar viendo las casas típicas no tiene precio. ¡Dora es muy amable y súper atenta!",
-        "review-text-2": "Una verdadera joya en Monopoli. La ubicación es perfecta, a pocos pasos de la playa de la ciudad y de fantásticos restaurantes. El apartamento estaba impecable, moderno pero lleno de encanto histórico. Dora fue un anfitrión brillante.",
-        "review-text-3": "Magnífica estancia en casa de Dora. El apartamento está decorado con mucho gusto, muy limpio e idealmente situado en el casco antiguo. ¡Los consejos de Dora para aparcar y comer fueron perfectos!",
-        "review-text-4": "El apartamento es precioso, tal cual las fotos, limpísimo y con todo lo necesario. La ubicación es inmejorable para explorar Monopoli a pie. Dora estuvo siempre atenta y amable. ¡Recomendado 100%!" 
+                "btn-view-all-reviews": "Leer todas las reseñas en Airbnb",
+        "review-date-1": "Junio 2024",
+        "review-date-2": "Mayo 2024",
+        "review-date-3": "Septiembre 2024",
+        "review-date-4": "Octubre 2024",
+        "review-text-1": "¡Estancia fantástica en casa de Dora! La comunicación fue excelente. El apartamento está impecable, bien equipado y en una ubicación ideal para explorar Monopoli, Polignano y Alberobello. ¡Muy recomendado!",
+        "review-text-2": "Apartamento luminoso con vistas a la plaza, limpio y tranquilo a pesar de la ubicación central. Dora y su equipo responden rápido. ¡Cálida bienvenida con dulces locales y nevera surtida a disposición!",
+        "review-text-3": "Alojamiento encantador en el corazón del centro histórico, renovado a nuevo e impecable en cada detalle. Dora fue súper amable y nos ayudó durante una tormenta. ¡Recomendado al 100%!",
+        "review-text-4": "¡Amor a primera vista! Apartamento impecable y bien decorado en el centro histórico, ideal para visitar Apulia. Dora es una anfitriona atenta que nos hizo probar excelentes productos locales. ¡Muy recomendado!" 
     },
 
     de: {
@@ -472,11 +488,15 @@ const translations = {
         "reviews-subtitle": "Verifizierte Bewertungen und Erfahrungen direkt von Airbnb",
         "reviews-score-desc": "Durchschnittliche Bewertung basierend auf 26 Bewertungen",
         "reviews-airbnb-badge": "Außergewöhnlicher Gastgeber auf Airbnb",
-        "btn-view-all-reviews": "Alle Bewertungen auf Airbnb lesen",
-        "review-text-1": "Perfekter Aufenthalt! Die Wohnung von Dora ist ein Schmuckstück im Herzen der Altstadt, blitzsauber und mit allem Komfort ausgestattet. Aufzuwachen und mit Blick auf die typischen Häuser zu frühstücken ist unbezahlbar. Dora ist sehr nett und super hilfsbereit!",
-        "review-text-2": "Ein absolutes Juwel in Monopoli. Die Lage ist perfekt, nur einen kurzen Spaziergang vom Stadtstrand und fantastischen Restaurants entfernt. Die Wohnung war makellos sauber, modern und dennoch voller historischem Charme. Dora war ein toller Gastgeber.",
-        "review-text-3": "Wunderschöner Aufenthalt bei Dora. Das Apartment ist sehr geschmackvoll eingerichtet, super sauber und perfekt in der Altstadt gelegen. Doras Tipps zum Parken und Essen waren perfekt!",
-        "review-text-4": "Die Wohnung ist wunderschön, genau wie auf den Fotos, sehr sauber und mit allem, was man braucht. Die Lage ist unschlagbar, um Monopoli zu Fuß zu erkunden. Riccardo war immer aufmerksam und freundlich. 100% empfehlenswert!" 
+                "btn-view-all-reviews": "Alle Bewertungen auf Airbnb lesen",
+        "review-date-1": "Juni 2024",
+        "review-date-2": "Mai 2024",
+        "review-date-3": "September 2024",
+        "review-date-4": "Oktober 2024",
+        "review-text-1": "Fantastischer Aufenthalt bei Dora! Die Kommunikation war hervorragend. Die Wohnung ist makellos sauber, gut ausgestattet und in einer idealen Lage, um Monopoli, Polignano und Alberobello zu erkunden. Sehr zu empfehlen!",
+        "review-text-2": "Helle Wohnung mit Blick auf den Platz, sauber und trotz der zentralen Lage ruhig. Dora und ihr Team antworten schnell. Herzlicher Empfang mit lokalen Süßigkeiten und gefüllter Minibar zur Verfügung!",
+        "review-text-3": "Liebevolle Unterkunft im Herzen der Altstadt, neu renoviert und makellos in jedem Detail. Dora war super freundlich und half uns während eines Sturms. 100 % zu empfehlen!",
+        "review-text-4": "Liebe auf den ersten Blick! Blitzsaubere und wunderschön eingerichtete Wohnung in der Altstadt, ideal für einen Besuch in Apulien. Dora ist eine fürsorgliche Gastgeberin, die uns lokale Spezialitäten geschenkt hat. Sehr zu empfehlen!" 
     }
 };
 
